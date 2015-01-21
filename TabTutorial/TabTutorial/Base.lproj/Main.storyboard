@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dG3-RT-f84">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Tab 2-->
+        <scene sceneID="e1E-8u-cNG">
+            <objects>
+                <viewController id="ojf-UR-67K" customClass="Tab2Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rPG-8l-Y68"/>
+                        <viewControllerLayoutGuide type="bottom" id="bkW-37-CCN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c3u-oZ-xzt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tab 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ya-pg-NDp">
+                                <rect key="frame" x="32" y="38" width="301" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tab 2" image="gmail" id="dTH-Gd-DVp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQF-z6-WzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507" y="406"/>
+        </scene>
+        <!--Tab 1-->
+        <scene sceneID="3N6-XB-I65">
+            <objects>
+                <viewController id="yNG-br-OG4" customClass="Tab1Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1eg-bs-ikR"/>
+                        <viewControllerLayoutGuide type="bottom" id="MEA-1I-Qya"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1pt-6j-THE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tab 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgs-Ob-cIr">
+                                <rect key="frame" x="28" y="28" width="260" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tab 1" image="twitter" id="OoW-wF-68g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RmS-J2-6Lu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507" y="-256"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mmD-GW-CBt">
+            <objects>
+                <tabBarController id="dG3-RT-f84" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Lxa-Ia-kbz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yNG-br-OG4" kind="relationship" relationship="viewControllers" id="uZ8-xZ-URK"/>
+                        <segue destination="ojf-UR-67K" kind="relationship" relationship="viewControllers" id="v4a-TM-LMC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2d-QI-N2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1327" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gmail" width="110" height="110"/>
+        <image name="twitter" width="110" height="110"/>
+    </resources>
+</document>
