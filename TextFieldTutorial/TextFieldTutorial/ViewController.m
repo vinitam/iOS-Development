@@ -53,7 +53,8 @@
 #pragma mark - TextField Delegates
 
 // This method is called once we click inside the textField
--(void)textFieldDidBeginEditing:(UITextField *)textField{
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
     NSLog(@"Text field did begin editing");
 }
 
