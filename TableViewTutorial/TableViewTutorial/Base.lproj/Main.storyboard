@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="z8c-Ui-nDT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="TuX-Vt-dGg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="I47-EB-Ugj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z8c-Ui-nDT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CCu-lk-Kzo"/>
+                            <constraint firstItem="z8c-Ui-nDT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LGA-4k-BM9"/>
+                            <constraint firstAttribute="trailing" secondItem="z8c-Ui-nDT" secondAttribute="trailing" id="OwF-JP-kRZ"/>
+                            <constraint firstAttribute="bottom" secondItem="z8c-Ui-nDT" secondAttribute="bottom" id="uYs-I1-Ra3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="z8c-Ui-nDT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="CCu-lk-Kzo"/>
+                                <exclude reference="LGA-4k-BM9"/>
+                                <exclude reference="OwF-JP-kRZ"/>
+                                <exclude reference="uYs-I1-Ra3"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="z8c-Ui-nDT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CCu-lk-Kzo"/>
+                                <include reference="LGA-4k-BM9"/>
+                                <include reference="OwF-JP-kRZ"/>
+                                <include reference="uYs-I1-Ra3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="z8c-Ui-nDT" id="HWQ-NZ-pIW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
