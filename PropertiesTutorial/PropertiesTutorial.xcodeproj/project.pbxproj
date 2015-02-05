@@ -14,6 +14,8 @@
 		AE5ADFC51A6EA02F00C38EA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5ADFC41A6EA02F00C38EA8 /* Images.xcassets */; };
 		AE5ADFC81A6EA02F00C38EA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5ADFC61A6EA02F00C38EA8 /* LaunchScreen.xib */; };
 		AE5ADFD41A6EA02F00C38EA8 /* PropertiesTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5ADFD31A6EA02F00C38EA8 /* PropertiesTutorialTests.m */; };
+		F294EF1D1A834FAD001F47FE /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = F294EF1C1A834FAD001F47FE /* Car.m */; };
+		F294EF201A834FBD001F47FE /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F294EF1F1A834FBD001F47FE /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		AE5ADFCD1A6EA02F00C38EA8 /* PropertiesTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropertiesTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5ADFD21A6EA02F00C38EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5ADFD31A6EA02F00C38EA8 /* PropertiesTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PropertiesTutorialTests.m; sourceTree = "<group>"; };
+		F294EF1B1A834FAD001F47FE /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		F294EF1C1A834FAD001F47FE /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		F294EF1E1A834FBD001F47FE /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F294EF1F1A834FBD001F47FE /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				AE5ADFBC1A6EA02F00C38EA8 /* AppDelegate.m */,
 				AE5ADFBE1A6EA02F00C38EA8 /* ViewController.h */,
 				AE5ADFBF1A6EA02F00C38EA8 /* ViewController.m */,
+				F294EF1B1A834FAD001F47FE /* Car.h */,
+				F294EF1C1A834FAD001F47FE /* Car.m */,
+				F294EF1E1A834FBD001F47FE /* Person.h */,
+				F294EF1F1A834FBD001F47FE /* Person.m */,
 				AE5ADFC11A6EA02F00C38EA8 /* Main.storyboard */,
 				AE5ADFC41A6EA02F00C38EA8 /* Images.xcassets */,
 				AE5ADFC61A6EA02F00C38EA8 /* LaunchScreen.xib */,
@@ -221,6 +231,8 @@
 			files = (
 				AE5ADFC01A6EA02F00C38EA8 /* ViewController.m in Sources */,
 				AE5ADFBD1A6EA02F00C38EA8 /* AppDelegate.m in Sources */,
+				F294EF201A834FBD001F47FE /* Person.m in Sources */,
+				F294EF1D1A834FAD001F47FE /* Car.m in Sources */,
 				AE5ADFBA1A6EA02F00C38EA8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +426,7 @@
 				AE5ADFD91A6EA02F00C38EA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE5ADFDA1A6EA02F00C38EA8 /* Build configuration list for PBXNativeTarget "PropertiesTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +435,7 @@
 				AE5ADFDC1A6EA02F00C38EA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

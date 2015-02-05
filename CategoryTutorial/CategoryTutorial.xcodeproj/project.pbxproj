@@ -420,6 +420,7 @@
 				F20D66061A762B9F00D00B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F20D66071A762B9F00D00B9B /* Build configuration list for PBXNativeTarget "CategoryTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +429,7 @@
 				F20D66091A762B9F00D00B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Duj-6k-TdH">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cqt-pt-at5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cqt-pt-at5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cqt-pt-at5"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Duj-6k-TdH" secondAttribute="trailing" id="0qS-Cr-UPY"/>
+                            <constraint firstAttribute="centerY" secondItem="Duj-6k-TdH" secondAttribute="centerY" id="6UR-wg-twX">
+                                <variation key="heightClass=regular-widthClass=compact" constant="31.5"/>
+                            </constraint>
+                            <constraint firstItem="Duj-6k-TdH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VWV-Wa-6pO"/>
+                            <constraint firstAttribute="centerX" secondItem="Duj-6k-TdH" secondAttribute="centerX" id="twv-mC-0PZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Duj-6k-TdH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0qS-Cr-UPY"/>
+                                <exclude reference="6UR-wg-twX"/>
+                                <exclude reference="VWV-Wa-6pO"/>
+                                <exclude reference="twv-mC-0PZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Duj-6k-TdH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0qS-Cr-UPY"/>
+                                <include reference="6UR-wg-twX"/>
+                                <include reference="VWV-Wa-6pO"/>
+                                <include reference="twv-mC-0PZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="Duj-6k-TdH" id="30e-PP-2ZU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="135.75"/>
+        </scene>
+    </scenes>
+</document>

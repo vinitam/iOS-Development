@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 @property (readwrite) int count;
+@property (nonatomic,assign)BOOL isVisible;
+@property (nonatomic)BOOL test;
+
 
 
 @end
