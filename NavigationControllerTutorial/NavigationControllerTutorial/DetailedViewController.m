@@ -15,6 +15,8 @@
 @implementation DetailedViewController
 
 - (void)viewDidLoad {
+    self.title = @"Second View";
+
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }

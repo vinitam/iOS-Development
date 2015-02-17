@@ -15,23 +15,8 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    Car *bmw = [[Car alloc]init];
-//    bmw.isNew = YES;
-    NSMutableString *model = [NSMutableString stringWithString:@"BMW 1 Series"];
-    bmw.carMake = model;
-    
-    NSLog(@"%@", bmw.carMake);
-    [model setString:@"BMW 2 Series"];
-    NSLog(@"%@", bmw.carMake);
-    
-    Car *maruti = [[Car alloc]init];
-    //    bmw.isNew = YES;
-    NSMutableString *number = [NSMutableString stringWithString:@"MH 04 3276"];
-    maruti.carNumber = number;
-    
-    NSLog(@"%@", maruti.carNumber);
-    [number setString:@"MH 02 0098"];
-    NSLog(@"%@", maruti.carNumber);
+
+    self.titleLabel.text = @"Hello";
     
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -40,6 +25,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)buttonClicked:(id)sender
+{
+    self.subTitleLabel.text = @"World";
 }
 
 @end

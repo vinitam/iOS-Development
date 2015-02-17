@@ -29,6 +29,7 @@
 -(IBAction)buttonChangeImageClicked:(id)sender
 {
     self.imageView.image = [UIImage imageNamed:@"surprise"];
+    
     [self.button setTitle:@"Finally !!!" forState:UIControlStateNormal];
     [self.button setTitle:@"Finally !!!" forState:UIControlStateSelected];
     

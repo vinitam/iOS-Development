@@ -66,7 +66,7 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    [self.outputField setText:[self.pickerElements objectAtIndex:row]];
+    self.outputField.text = [self.pickerElements objectAtIndex:row];
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component

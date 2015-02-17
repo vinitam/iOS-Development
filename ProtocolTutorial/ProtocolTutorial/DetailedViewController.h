@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class DetailedViewController;
 @protocol ProgressDelegate <NSObject>
-@required
+@optional
 - (void)viewController:(DetailedViewController * )viewController shouldUpdateProgress:(float)progress;
 - (void)viewController:(DetailedViewController * )viewController progressDidComplete:(BOOL)complete;
 - (void)viewController:(DetailedViewController * )viewController progressIsMidWay:(BOOL)complete;

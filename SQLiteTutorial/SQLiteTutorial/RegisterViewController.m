@@ -8,18 +8,36 @@
 
 #import "RegisterViewController.h"
 #import "Issue.h"
+#import "DataHelper.h"
 @interface RegisterViewController ()
-@property(nonatomic)IBOutlet UITableView *tableView;
-@property(nonatomic)NSArray *issueArray;
+@property(nonatomic)IBOutlet UITextField *nameLabel;
+@property(nonatomic)IBOutlet UITextView *descLabel;
 @end
 
 @implementation RegisterViewController
 
 - (void)viewDidLoad
 {
-    [self fetchAllIssues];
+    UITapGestureRecognizer *singleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard:)];
+    [self.view addGestureRecognizer:singleTapGestureRecognizer];
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+
+-(void)dismissKeyboard:(id)sender
+{
+    [self.nameLabel resignFirstResponder];
+    [self.descLabel resignFirstResponder];
+}
+
+-(IBAction)buttonCreateIssueClicked:(id)sender
+{
+    if(self.nameLabel.text.length > 0 && self.descLabel.text.length > 0)
+    {
+        [[DataHelper sharedInstance]createIssueWithName:self.nameLabel.text issueDescription:self.descLabel.text];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,36 +45,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [self.issueArray count];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 45;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString* cellIdentifier = @"CellIdentifier";
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-    }
-    Issue *issue = [self.issueArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = issue.name;
-    cell.detailTextLabel.text = issue.issue;
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-}
 
 @end

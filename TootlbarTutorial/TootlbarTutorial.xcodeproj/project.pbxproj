@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F284A4371A8D0F43009BCF1C /* Audio@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F284A4361A8D0F43009BCF1C /* Audio@2x.png */; };
 		F2B2ED421A736BD7005E886B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2ED411A736BD7005E886B /* main.m */; };
 		F2B2ED451A736BD7005E886B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2ED441A736BD7005E886B /* AppDelegate.m */; };
 		F2B2ED481A736BD7005E886B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2B2ED471A736BD7005E886B /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F284A4361A8D0F43009BCF1C /* Audio@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Audio@2x.png"; sourceTree = "<group>"; };
 		F2B2ED3C1A736BD7005E886B /* TootlbarTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TootlbarTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B2ED401A736BD7005E886B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2B2ED411A736BD7005E886B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				F2B2ED471A736BD7005E886B /* ViewController.m */,
 				F2B2ED491A736BD7005E886B /* Main.storyboard */,
 				F2B2ED4C1A736BD7005E886B /* Images.xcassets */,
+				F284A4361A8D0F43009BCF1C /* Audio@2x.png */,
 				F2B2ED4E1A736BD7005E886B /* LaunchScreen.xib */,
 				F2B2ED3F1A736BD7005E886B /* Supporting Files */,
 			);
@@ -202,6 +205,7 @@
 				F2B2ED4B1A736BD7005E886B /* Main.storyboard in Resources */,
 				F2B2ED501A736BD7005E886B /* LaunchScreen.xib in Resources */,
 				F2B2ED4D1A736BD7005E886B /* Images.xcassets in Resources */,
+				F284A4371A8D0F43009BCF1C /* Audio@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +418,7 @@
 				F2B2ED611A736BD7005E886B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2B2ED621A736BD7005E886B /* Build configuration list for PBXNativeTarget "TootlbarTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +427,7 @@
 				F2B2ED641A736BD7005E886B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

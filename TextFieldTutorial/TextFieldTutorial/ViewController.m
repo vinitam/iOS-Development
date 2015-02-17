@@ -18,6 +18,7 @@
 {
     [self setUpTextField];
     
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -27,6 +28,7 @@
     UILabel *prefixLabel = [[UILabel alloc]initWithFrame:CGRectZero];
     prefixLabel.text =@"$";
     [prefixLabel sizeToFit];
+    
     
     // This sets the border style of the text field
     self.textField.borderStyle = UITextBorderStyleRoundedRect;
@@ -67,6 +69,21 @@
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
     return YES;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    return YES;
+}
+
+-(IBAction)buttonClicked:(id)sender
+{
+    
+    if(self.textField.text.length != 0)
+    {
+        self.greetingLabel.text = [NSString stringWithFormat:@"Hello %@",self.textField.text];
+
+    }
 }
 
 - (void)didReceiveMemoryWarning {

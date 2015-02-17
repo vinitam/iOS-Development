@@ -11,5 +11,6 @@
 @interface Issue : NSObject
 @property(nonatomic)NSString *name;
 @property(nonatomic)NSString *issue;
+@property(nonatomic)int issueNumber;
 
 @end

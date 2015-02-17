@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
-@property(nonatomic)IBOutlet  UITextField *textField;
-
+@property(nonatomic,weak)IBOutlet  UITextField *textField;
+@property(nonatomic,weak)IBOutlet  UILabel *greetingLabel;
+-(IBAction)buttonClicked:(id)sender;
 @end
 

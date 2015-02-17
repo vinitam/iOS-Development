@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <sqlite3.h>
 
 @interface DataHelper : NSObject
-
+{
+    NSString *databasePath;
+}
++(DataHelper*)sharedInstance;
+-(NSArray *)fetchAllissues;
+-(BOOL)createDB;
+-(BOOL)createIssueWithName:(NSString*)issueName issueDescription:(NSString*)description;
+-(NSArray*) findByRegisterNumber:(NSString*)registerNumber;
 @end

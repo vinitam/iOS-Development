@@ -12,6 +12,7 @@
 
 -(BOOL)isIsNew
 {
+    
     return YES;
 }
 

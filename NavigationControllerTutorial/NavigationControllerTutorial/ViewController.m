@@ -15,8 +15,24 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    self.title = @"First View";
+    
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"Left" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarItemClicked:)];
+
+    [self.navigationItem setLeftBarButtonItem:leftItem];
+    
+    [self.navigationController.navigationItem setLeftBarButtonItem:leftItem];
+    
+    UIBarButtonItem * item = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"reload"]]];
+    [self.navigationItem setRightBarButtonItem:item];
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)leftBarItemClicked:(id)sender
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {

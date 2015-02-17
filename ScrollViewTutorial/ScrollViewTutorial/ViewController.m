@@ -24,12 +24,11 @@
 -(void)addScrollView
 {
     self.scrollView = [[UIScrollView alloc]initWithFrame:self.view.frame];
-    self.scrollView.accessibilityActivationPoint = CGPointMake(100, 100);
     for(int i=0 ;i < 3;i++)
     {
-        UIImageView *imgView = [[UIImageView alloc]initWithImage:
-                   [UIImage imageNamed:[NSString stringWithFormat:@"landscape%i",i+1]]];
-        imgView.frame = CGRectMake(i * self.view.frame.size.width, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height);
+        UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(i * self.view.frame.size.width, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height) ];
+                                
+        imgView.image = [UIImage imageNamed:[NSString stringWithFormat:@"landscape%i",i+1]];
         [self.scrollView addSubview:imgView];
     }
     self.scrollView.minimumZoomScale = 0.5;

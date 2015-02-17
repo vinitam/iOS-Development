@@ -21,12 +21,15 @@
 
 -(IBAction)switched:(id)sender
 {
-    NSLog(@"Switch current state %@", self.switchControl.on ? @"On" : @"Off");
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)switchValueChanged:(id)sender {
+    NSLog(@"Switch current state %@", self.switchControl.on ? @"On" : @"Off");
+
 }
 
 @end

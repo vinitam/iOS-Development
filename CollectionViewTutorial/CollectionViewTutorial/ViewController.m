@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "CustomCollectionViewCell.h"
 @interface ViewController ()
 @property(nonatomic)NSArray *landscapeImages;
+@property(nonatomic)IBOutlet UICollectionView *collectionView;
 @end
 
 @implementation ViewController
@@ -23,6 +24,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    flowLayout.scrollDirection =  UICollectionViewScrollDirectionHorizontal;
+
+    self.collectionView = [[UICollectionView alloc]initWithFrame:self.view.frame collectionViewLayout:flowLayout];
+    [self.collectionView registerClass:[CustomCollectionViewCell class] forCellWithReuseIdentifier:@"CustomCell"];
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -32,13 +44,11 @@
 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identifier = @"Cell";
+    static NSString *identifier = @"CustomCell";
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    CustomCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
-    UIImageView *recipeImageView = (UIImageView *)[cell viewWithTag:100];
-    recipeImageView.image = [UIImage imageNamed:[self.landscapeImages objectAtIndex:indexPath.row]];
-    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%li",(long)indexPath.row+1]]];
+    cell.landscapeImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%li",(long)indexPath.row+1]];
     
     return cell;
 }

@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad
 {
-    NSString *costString = @"100";
+    NSString *costString = @"500";
     
     NSLog(@"%@",[costString addDollarPrefix]);
     [super viewDidLoad];

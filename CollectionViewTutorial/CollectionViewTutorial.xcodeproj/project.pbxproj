@@ -14,6 +14,7 @@
 		F20D65C01A76284E00D00B9B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20D65BF1A76284E00D00B9B /* Images.xcassets */; };
 		F20D65C31A76284E00D00B9B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20D65C11A76284E00D00B9B /* LaunchScreen.xib */; };
 		F20D65CF1A76284E00D00B9B /* CollectionViewTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F20D65CE1A76284E00D00B9B /* CollectionViewTutorialTests.m */; };
+		F21A20EB1A924C1F003DF8FD /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F21A20EA1A924C1F003DF8FD /* CustomCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		F20D65C81A76284E00D00B9B /* CollectionViewTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20D65CD1A76284E00D00B9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F20D65CE1A76284E00D00B9B /* CollectionViewTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewTutorialTests.m; sourceTree = "<group>"; };
+		F21A20E91A924C1F003DF8FD /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		F21A20EA1A924C1F003DF8FD /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				F20D65B71A76284E00D00B9B /* AppDelegate.m */,
 				F20D65B91A76284E00D00B9B /* ViewController.h */,
 				F20D65BA1A76284E00D00B9B /* ViewController.m */,
+				F21A20E91A924C1F003DF8FD /* CustomCollectionViewCell.h */,
+				F21A20EA1A924C1F003DF8FD /* CustomCollectionViewCell.m */,
 				F20D65BC1A76284E00D00B9B /* Main.storyboard */,
 				F20D65BF1A76284E00D00B9B /* Images.xcassets */,
 				F20D65C11A76284E00D00B9B /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				F20D65BB1A76284E00D00B9B /* ViewController.m in Sources */,
 				F20D65B81A76284E00D00B9B /* AppDelegate.m in Sources */,
 				F20D65B51A76284E00D00B9B /* main.m in Sources */,
+				F21A20EB1A924C1F003DF8FD /* CustomCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +420,7 @@
 				F20D65D41A76284E00D00B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F20D65D51A76284E00D00B9B /* Build configuration list for PBXNativeTarget "CollectionViewTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				F20D65D71A76284E00D00B9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
