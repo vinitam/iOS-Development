@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Link" representedClassName="Link" syncable="YES">
+        <attribute name="fixturesLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leagueTableLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teamLink" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="link_Season" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Season" inverseName="season_link" inverseEntity="Season" syncable="YES"/>
+    </entity>
+    <entity name="Season" representedClassName="Season" syncable="YES">
+        <attribute name="caption" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="league" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfGames" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="numberOfTeams" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="season_link" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Link" inverseName="link_Season" inverseEntity="Link" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Season" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Link" positionX="241" positionY="-0" width="128" height="118"/>
+    </elements>
+</model>
