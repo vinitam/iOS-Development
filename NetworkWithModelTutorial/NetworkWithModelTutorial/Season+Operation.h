@@ -9,5 +9,5 @@
 #import "Season.h"
 
 @interface Season (Operation)
-+(NSArray *)getSeasonFromDictionary:(NSArray *)seasonData;
++(NSArray *)getSeasonFromArray:(NSArray *)seasonData;
 @end

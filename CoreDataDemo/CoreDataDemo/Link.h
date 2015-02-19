@@ -13,10 +13,10 @@
 
 @interface Link : NSManagedObject
 
-@property (nonatomic, retain) NSString * link;
-@property (nonatomic, retain) NSString * teamLink;
 @property (nonatomic, retain) NSString * fixturesLink;
 @property (nonatomic, retain) NSString * leagueTableLink;
+@property (nonatomic, retain) NSString * link;
+@property (nonatomic, retain) NSString * teamLink;
 @property (nonatomic, retain) Season *link_Season;
 
 @end

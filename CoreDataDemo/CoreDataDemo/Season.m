@@ -13,11 +13,11 @@
 @implementation Season
 
 @dynamic caption;
-@dynamic league;
-@dynamic year;
-@dynamic numberOfTeams;
-@dynamic numberOfGames;
 @dynamic lastUpdated;
+@dynamic league;
+@dynamic numberOfGames;
+@dynamic numberOfTeams;
+@dynamic year;
 @dynamic season_link;
 
 @end

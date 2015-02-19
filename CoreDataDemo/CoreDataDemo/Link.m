@@ -12,10 +12,10 @@
 
 @implementation Link
 
-@dynamic link;
-@dynamic teamLink;
 @dynamic fixturesLink;
 @dynamic leagueTableLink;
+@dynamic link;
+@dynamic teamLink;
 @dynamic link_Season;
 
 @end

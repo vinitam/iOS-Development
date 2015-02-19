@@ -58,6 +58,7 @@
     }
     Season *season = [self.tableData objectAtIndex:indexPath.row];
     cell.textLabel.text = season.caption;
+    
     return cell;
 }
 

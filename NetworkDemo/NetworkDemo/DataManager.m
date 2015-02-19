@@ -12,15 +12,14 @@
 
 +(void)fetchDataForMatchesWithSuccess:(NetworkSuccess )success failure:(NetworkFailure)failure
 {
+    
     [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://api.football-data.org/alpha/soccerseasons"]] queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-        
         if (error) {
             failure(error);
         } else {
-
             success([NSJSONSerialization JSONObjectWithData:data
                                 options:kNilOptions
-                                  error:&error]);
+                                  error:nil]);
         }
     }];
     

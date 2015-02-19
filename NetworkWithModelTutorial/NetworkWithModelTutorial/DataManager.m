@@ -17,7 +17,7 @@
         if (error) {
             failure(error);
         } else {
-            success([Season getSeasonFromDictionary:[NSJSONSerialization JSONObjectWithData:data
+            success([Season getSeasonFromArray:[NSJSONSerialization JSONObjectWithData:data
                                 options:kNilOptions
                                   error:&error]]);
         }

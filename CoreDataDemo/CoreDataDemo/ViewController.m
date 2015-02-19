@@ -39,8 +39,10 @@
     AppDelegate  *appDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Season"];
 
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Season" inManagedObjectContext:appDelegate.managedObjectContext];
     [request setReturnsDistinctResults:YES];
+    
+//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"league =='BL1'"];
+//    request.predicate = predicate;
     
     NSError *error = nil;
     NSArray *result = [appDelegate.managedObjectContext executeFetchRequest:request error:&error];

@@ -14,11 +14,11 @@
 @interface Season : NSManagedObject
 
 @property (nonatomic, retain) NSString * caption;
-@property (nonatomic, retain) NSString * league;
-@property (nonatomic, retain) NSString * year;
-@property (nonatomic, retain) NSNumber * numberOfTeams;
-@property (nonatomic, retain) NSNumber * numberOfGames;
 @property (nonatomic, retain) NSString * lastUpdated;
+@property (nonatomic, retain) NSString * league;
+@property (nonatomic, retain) NSNumber * numberOfGames;
+@property (nonatomic, retain) NSNumber * numberOfTeams;
+@property (nonatomic, retain) NSString * year;
 @property (nonatomic, retain) Link *season_link;
 
 @end

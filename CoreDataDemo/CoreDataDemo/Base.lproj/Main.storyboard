@@ -37,10 +37,10 @@
                                 <exclude reference="KL5-tH-pbV"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="PEi-dO-loc"/>
                                 <exclude reference="2Oe-9G-Byn"/>
                                 <exclude reference="cDX-Da-v0e"/>
                                 <exclude reference="pk2-Pu-Rco"/>
-                                <exclude reference="PEi-dO-loc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -48,10 +48,10 @@
                                 <include reference="KL5-tH-pbV"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="PEi-dO-loc"/>
                                 <include reference="2Oe-9G-Byn"/>
                                 <include reference="cDX-Da-v0e"/>
                                 <include reference="pk2-Pu-Rco"/>
-                                <include reference="PEi-dO-loc"/>
                             </mask>
                         </variation>
                     </view>

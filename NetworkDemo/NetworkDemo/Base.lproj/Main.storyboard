@@ -37,10 +37,10 @@
                                 <exclude reference="Idq-Lt-RIi"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="aK5-Eg-FfT"/>
                                 <exclude reference="XjI-Pn-u2Q"/>
                                 <exclude reference="fnJ-A0-z9d"/>
                                 <exclude reference="pfB-E2-88s"/>
-                                <exclude reference="aK5-Eg-FfT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -48,10 +48,10 @@
                                 <include reference="Idq-Lt-RIi"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="aK5-Eg-FfT"/>
                                 <include reference="XjI-Pn-u2Q"/>
                                 <include reference="fnJ-A0-z9d"/>
                                 <include reference="pfB-E2-88s"/>
-                                <include reference="aK5-Eg-FfT"/>
                             </mask>
                         </variation>
                     </view>

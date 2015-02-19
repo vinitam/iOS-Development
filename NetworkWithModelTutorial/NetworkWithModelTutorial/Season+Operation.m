@@ -10,7 +10,7 @@
 #import "Link.h"
 @implementation Season (Operation)
 
-+(NSArray *)getSeasonFromDictionary:(NSArray *)seasonData
++(NSArray *)getSeasonFromArray:(NSArray *)seasonData
 {
     NSMutableArray *resultsArray = [[NSMutableArray alloc]init];
     for(int i=0;i < [seasonData count];i++)
@@ -27,10 +27,10 @@
         
         NSDictionary *linkDictionary = [dictionary objectForKey:@"_links"];
         Link *link = [[Link alloc]init];
-        link.link = [linkDictionary objectForKey:@"self"];
-        link.teamLink = [linkDictionary objectForKey:@"teams"];
-        link.fixturesLink = [linkDictionary objectForKey:@"fixtures"];
-        link.leagueTableLink = [linkDictionary objectForKey:@"leagueTable"];
+        link.link = [[linkDictionary objectForKey:@"self"]objectForKey:@"href"];
+        link.teamLink = [[linkDictionary objectForKey:@"teams"]objectForKey:@"href"];
+        link.fixturesLink = [[linkDictionary objectForKey:@"fixtures"]objectForKey:@"href"];
+        link.leagueTableLink = [[linkDictionary objectForKey:@"leagueTable"]objectForKey:@"href"];
         season.link = link;
         [resultsArray addObject:season];
     }

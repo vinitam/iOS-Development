@@ -12,19 +12,32 @@
 
 +(void)fetchDataForMatchesWithSuccess:(NetworkSuccess )success failure:(NetworkFailure)failure
 {
-    [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://api.football-data.org/alpha/soccerseasons"]] queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-        
-        if (error) {
-            failure(error);
-        } else {
-            success([Season getSeasonFromDictionary:[NSJSONSerialization JSONObjectWithData:data
-                                options:kNilOptions
-                                  error:&error]]);
-        }
-    }];
+    NSURLSession *session = [NSURLSession sharedSession];
+    [[session dataTaskWithURL:[NSURL URLWithString:@"http://api.football-data.org/alpha/soccerseasons"]
+            completionHandler:^(NSData *data,
+                                NSURLResponse *response,
+                                NSError *error) {
+                if (error) {
+                    failure(error);
+                } else {
+                    success([Season getSeasonFromDictionary:[NSJSONSerialization JSONObjectWithData:data
+                                                                                            options:kNilOptions
+                                                                                              error:&error]]);
+                }
+            }] resume];
+    
+//    [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://api.football-data.org/alpha/soccerseasons"]] queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+//        
+//        if (error) {
+//            failure(error);
+//        } else {
+//            success([Season getSeasonFromDictionary:[NSJSONSerialization JSONObjectWithData:data
+//                                options:kNilOptions
+//                                  error:&error]]);
+//        }
+//    }];
     
 }
-
 
 
 @end

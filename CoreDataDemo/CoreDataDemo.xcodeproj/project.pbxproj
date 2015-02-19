@@ -15,10 +15,10 @@
 		F231A3C71A934096000087A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F231A3C61A934096000087A1 /* Images.xcassets */; };
 		F231A3CA1A934096000087A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F231A3C81A934096000087A1 /* LaunchScreen.xib */; };
 		F231A3D61A934096000087A1 /* CoreDataDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A3D51A934096000087A1 /* CoreDataDemoTests.m */; };
-		F231A3E41A93414F000087A1 /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A3E31A93414F000087A1 /* Link.m */; };
 		F231A3E71A93416B000087A1 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A3E61A93416B000087A1 /* DataManager.m */; };
 		F231A3EA1A934179000087A1 /* Season+Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A3E91A934178000087A1 /* Season+Operation.m */; };
-		F231A3ED1A93438B000087A1 /* Season.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A3EC1A93438B000087A1 /* Season.m */; };
+		F231A3F91A93A60B000087A1 /* Season.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A3F81A93A60B000087A1 /* Season.m */; };
+		F231A3FC1A93A60B000087A1 /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = F231A3FB1A93A60B000087A1 /* Link.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +46,14 @@
 		F231A3CF1A934096000087A1 /* CoreDataDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F231A3D41A934096000087A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F231A3D51A934096000087A1 /* CoreDataDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataDemoTests.m; sourceTree = "<group>"; };
-		F231A3E21A93414F000087A1 /* Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
-		F231A3E31A93414F000087A1 /* Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Link.m; sourceTree = "<group>"; };
 		F231A3E51A93416B000087A1 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		F231A3E61A93416B000087A1 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		F231A3E81A934178000087A1 /* Season+Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Season+Operation.h"; sourceTree = "<group>"; };
 		F231A3E91A934178000087A1 /* Season+Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Season+Operation.m"; sourceTree = "<group>"; };
-		F231A3EB1A93438B000087A1 /* Season.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Season.h; sourceTree = "<group>"; };
-		F231A3EC1A93438B000087A1 /* Season.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Season.m; sourceTree = "<group>"; };
+		F231A3F71A93A60B000087A1 /* Season.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Season.h; sourceTree = "<group>"; };
+		F231A3F81A93A60B000087A1 /* Season.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Season.m; sourceTree = "<group>"; };
+		F231A3FA1A93A60B000087A1 /* Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
+		F231A3FB1A93A60B000087A1 /* Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Link.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,15 +102,15 @@
 				F231A3C31A934096000087A1 /* Main.storyboard */,
 				F231A3E81A934178000087A1 /* Season+Operation.h */,
 				F231A3E91A934178000087A1 /* Season+Operation.m */,
-				F231A3E21A93414F000087A1 /* Link.h */,
-				F231A3E31A93414F000087A1 /* Link.m */,
 				F231A3E51A93416B000087A1 /* DataManager.h */,
 				F231A3E61A93416B000087A1 /* DataManager.m */,
 				F231A3C61A934096000087A1 /* Images.xcassets */,
 				F231A3C81A934096000087A1 /* LaunchScreen.xib */,
 				F231A3BD1A934096000087A1 /* CoreDataDemo.xcdatamodeld */,
-				F231A3EB1A93438B000087A1 /* Season.h */,
-				F231A3EC1A93438B000087A1 /* Season.m */,
+				F231A3FA1A93A60B000087A1 /* Link.h */,
+				F231A3FB1A93A60B000087A1 /* Link.m */,
+				F231A3F71A93A60B000087A1 /* Season.h */,
+				F231A3F81A93A60B000087A1 /* Season.m */,
 				F231A3B61A934096000087A1 /* Supporting Files */,
 			);
 			path = CoreDataDemo;
@@ -242,14 +242,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F231A3F91A93A60B000087A1 /* Season.m in Sources */,
 				F231A3BC1A934096000087A1 /* AppDelegate.m in Sources */,
-				F231A3E41A93414F000087A1 /* Link.m in Sources */,
 				F231A3EA1A934179000087A1 /* Season+Operation.m in Sources */,
 				F231A3E71A93416B000087A1 /* DataManager.m in Sources */,
-				F231A3ED1A93438B000087A1 /* Season.m in Sources */,
 				F231A3BF1A934096000087A1 /* CoreDataDemo.xcdatamodeld in Sources */,
 				F231A3C21A934096000087A1 /* ViewController.m in Sources */,
 				F231A3B91A934096000087A1 /* main.m in Sources */,
+				F231A3FC1A93A60B000087A1 /* Link.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +442,7 @@
 				F231A3DB1A934096000087A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F231A3DC1A934096000087A1 /* Build configuration list for PBXNativeTarget "CoreDataDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +451,7 @@
 				F231A3DE1A934096000087A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

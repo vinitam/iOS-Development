@@ -17,7 +17,7 @@
         <relationship name="season_link" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Link" inverseName="link_Season" inverseEntity="Link" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Link" positionX="36" positionY="263" width="128" height="118"/>
         <element name="Season" positionX="-63" positionY="-18" width="128" height="148"/>
-        <element name="Link" positionX="241" positionY="-0" width="128" height="118"/>
     </elements>
 </model>
