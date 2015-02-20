@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 @property(nonatomic)IBOutlet UIImageView *imageView;
+@property(nonatomic)IBOutlet NSLayoutConstraint *topConstraint;
 @end
 
 @implementation ViewController
@@ -17,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self performSelector:@selector(addScaleAnsRotate) withObject:self afterDelay:2];
+    [self performSelector:@selector(animateView) withObject:self afterDelay:2];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -63,6 +64,17 @@
     CGAffineTransform rotateTrans =
     CGAffineTransformMakeRotation(90 * M_PI / 180);
     self.imageView.transform = CGAffineTransformConcat(scaleTrans, rotateTrans);
+}
+
+-(void)animateView
+{
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+    [animation setFromValue:[NSNumber numberWithFloat:1.3f]];
+    [animation setToValue:[NSNumber numberWithFloat:1.f]];
+    [animation setDuration:2.f];
+    [animation setRemovedOnCompletion:NO];
+    [[self.imageView layer] addAnimation:animation forKey:@"scale"];
 }
 
 @end

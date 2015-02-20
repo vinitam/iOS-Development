@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -42,7 +43,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="2ze-N4-iYz" secondAttribute="trailing" constant="122" id="LHb-tZ-aS0"/>
                             <constraint firstItem="2ze-N4-iYz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="122" id="Vnj-B5-h1V"/>
                             <constraint firstAttribute="centerX" secondItem="2ze-N4-iYz" secondAttribute="centerX" id="YsS-M8-9HV"/>
-                            <constraint firstItem="2ze-N4-iYz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="oAx-Dw-TAQ"/>
+                            <constraint firstItem="2ze-N4-iYz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oAx-Dw-TAQ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -69,6 +70,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="2ze-N4-iYz" id="F7p-i9-bAP"/>
+                        <outlet property="topConstraint" destination="oAx-Dw-TAQ" id="RKp-Sc-Cun"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
