@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2ze-N4-iYz">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="29T-CS-WBf"/>
+                                    <constraint firstAttribute="height" constant="143" id="QTT-Ua-Oua"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="29T-CS-WBf"/>
+                                        <exclude reference="QTT-Ua-Oua"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="29T-CS-WBf"/>
+                                        <include reference="QTT-Ua-Oua"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="2ze-N4-iYz" secondAttribute="trailing" constant="122" id="LHb-tZ-aS0"/>
+                            <constraint firstItem="2ze-N4-iYz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="122" id="Vnj-B5-h1V"/>
+                            <constraint firstAttribute="centerX" secondItem="2ze-N4-iYz" secondAttribute="centerX" id="YsS-M8-9HV"/>
+                            <constraint firstItem="2ze-N4-iYz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="oAx-Dw-TAQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2ze-N4-iYz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="LHb-tZ-aS0"/>
+                                <exclude reference="Vnj-B5-h1V"/>
+                                <exclude reference="YsS-M8-9HV"/>
+                                <exclude reference="oAx-Dw-TAQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2ze-N4-iYz"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="LHb-tZ-aS0"/>
+                                <include reference="Vnj-B5-h1V"/>
+                                <include reference="YsS-M8-9HV"/>
+                                <include reference="oAx-Dw-TAQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="2ze-N4-iYz" id="F7p-i9-bAP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.5" y="298.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="140" height="168"/>
+    </resources>
+</document>
