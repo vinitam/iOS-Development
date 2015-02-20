@@ -65,11 +65,40 @@
                                     <action selector="buttonEmailClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JrP-Rl-T2M"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLa-C3-YRo">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="W0g-Ys-C1f"/>
+                                    <constraint firstAttribute="width" constant="127" id="yAX-ZQ-yM9"/>
+                                </constraints>
+                                <state key="normal" title="Message">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="yAX-ZQ-yM9"/>
+                                        <exclude reference="W0g-Ys-C1f"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="yAX-ZQ-yM9"/>
+                                        <include reference="W0g-Ys-C1f"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonMessageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="me3-yB-QfK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lvq-wi-7Uo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="DeL-tI-mAL"/>
+                            <constraint firstItem="MLa-C3-YRo" firstAttribute="top" secondItem="RhF-El-xRP" secondAttribute="bottom" constant="49" id="ER0-at-U6Q"/>
                             <constraint firstItem="RhF-El-xRP" firstAttribute="top" secondItem="lvq-wi-7Uo" secondAttribute="bottom" constant="71" id="EUM-I5-FPB"/>
+                            <constraint firstAttribute="centerX" secondItem="MLa-C3-YRo" secondAttribute="centerX" id="VZr-gn-h4g"/>
                             <constraint firstAttribute="centerX" secondItem="lvq-wi-7Uo" secondAttribute="centerX" id="Yy7-PX-sxn"/>
                             <constraint firstAttribute="centerX" secondItem="RhF-El-xRP" secondAttribute="centerX" id="ckg-0d-uwt"/>
                         </constraints>
@@ -77,24 +106,30 @@
                             <mask key="subviews">
                                 <exclude reference="lvq-wi-7Uo"/>
                                 <exclude reference="RhF-El-xRP"/>
+                                <exclude reference="MLa-C3-YRo"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="DeL-tI-mAL"/>
                                 <exclude reference="Yy7-PX-sxn"/>
                                 <exclude reference="EUM-I5-FPB"/>
                                 <exclude reference="ckg-0d-uwt"/>
+                                <exclude reference="ER0-at-U6Q"/>
+                                <exclude reference="VZr-gn-h4g"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="lvq-wi-7Uo"/>
                                 <include reference="RhF-El-xRP"/>
+                                <include reference="MLa-C3-YRo"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="DeL-tI-mAL"/>
                                 <include reference="Yy7-PX-sxn"/>
                                 <include reference="EUM-I5-FPB"/>
                                 <include reference="ckg-0d-uwt"/>
+                                <include reference="ER0-at-U6Q"/>
+                                <include reference="VZr-gn-h4g"/>
                             </mask>
                         </variation>
                     </view>
