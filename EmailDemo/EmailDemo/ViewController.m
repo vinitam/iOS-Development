@@ -34,7 +34,7 @@
         mailer.mailComposeDelegate = self;
         [mailer setSubject:@"Sample Mail app"];
         
-        NSArray *usersTo = [NSArray arrayWithObject: @"raja@apple.com"];
+        NSArray *usersTo = [NSArray arrayWithObject: @"test@@apple.com"];
         [mailer setToRecipients:usersTo];
         
         UIImage *myImage = [UIImage imageNamed:@"landscape"];
