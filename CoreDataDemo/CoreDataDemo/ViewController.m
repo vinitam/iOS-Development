@@ -19,10 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     [self fetchDataFromSever];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+       
 
 -(void)fetchDataFromSever
 {

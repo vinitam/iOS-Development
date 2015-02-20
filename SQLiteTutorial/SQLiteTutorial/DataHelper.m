@@ -88,36 +88,32 @@ static sqlite3_stmt *statement = nil;
 
 -(NSArray *)fetchAllissues
 {
+    NSMutableArray *resultArray = [[NSMutableArray alloc]init];
+
     const char *dbpath = [databasePath UTF8String];
     if (sqlite3_open(dbpath, &database) == SQLITE_OK)
     {
         NSString *querySQL = @"select * from issueDetail";
         
         const char *query_stmt = [querySQL UTF8String];
-        NSMutableArray *resultArray = [[NSMutableArray alloc]init];
         if (sqlite3_prepare_v2(database,
                                query_stmt, -1, &statement, NULL) == SQLITE_OK)
         {
-            if (sqlite3_step(statement) == SQLITE_ROW)
+            while (sqlite3_step(statement) == SQLITE_ROW)
             {
                 Issue *issue = [[Issue alloc]init];
                 
-//                issue.issueNumber =  sqlite3_column_int(statement, 0);
                 issue.name = [[NSString alloc] initWithUTF8String:
-                              (const char *) sqlite3_column_text(statement, 0)];
-                issue.issue = [[NSString alloc] initWithUTF8String:
                               (const char *) sqlite3_column_text(statement, 1)];
+                issue.issue = [[NSString alloc] initWithUTF8String:
+                              (const char *) sqlite3_column_text(statement, 2)];
                 [resultArray addObject:issue];
-                return resultArray;
             }
-            else{
-                NSLog(@"Not found");
-                return nil;
-            }
+
         }
         sqlite3_reset(statement);
     }
-    return nil;
+    return resultArray;
 }
 
 @end
