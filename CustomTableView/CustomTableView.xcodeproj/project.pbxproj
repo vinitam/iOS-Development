@@ -14,6 +14,7 @@
 		F21F37821A999BEB00D880D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F21F37811A999BEB00D880D9 /* Images.xcassets */; };
 		F21F37851A999BEB00D880D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21F37831A999BEB00D880D9 /* LaunchScreen.xib */; };
 		F21F37911A999BEB00D880D9 /* CustomTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F21F37901A999BEB00D880D9 /* CustomTableViewTests.m */; };
+		F21F379F1A999FB400D880D9 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F21F379E1A999FB400D880D9 /* CustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		F21F378A1A999BEB00D880D9 /* CustomTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F21F378F1A999BEB00D880D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F21F37901A999BEB00D880D9 /* CustomTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewTests.m; sourceTree = "<group>"; };
+		F21F379D1A999FB400D880D9 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		F21F379E1A999FB400D880D9 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				F21F37791A999BEB00D880D9 /* AppDelegate.m */,
 				F21F377B1A999BEB00D880D9 /* ViewController.h */,
 				F21F377C1A999BEB00D880D9 /* ViewController.m */,
+				F21F379D1A999FB400D880D9 /* CustomCell.h */,
+				F21F379E1A999FB400D880D9 /* CustomCell.m */,
 				F21F377E1A999BEB00D880D9 /* Main.storyboard */,
 				F21F37811A999BEB00D880D9 /* Images.xcassets */,
 				F21F37831A999BEB00D880D9 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				F21F377D1A999BEB00D880D9 /* ViewController.m in Sources */,
 				F21F377A1A999BEB00D880D9 /* AppDelegate.m in Sources */,
+				F21F379F1A999FB400D880D9 /* CustomCell.m in Sources */,
 				F21F37771A999BEB00D880D9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

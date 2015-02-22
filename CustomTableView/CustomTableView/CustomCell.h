@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomCell : UITableViewCell
+@property(nonatomic)IBOutlet UILabel *itemName;
+@property(nonatomic)IBOutlet UILabel *costLabel;
+@property(nonatomic)IBOutlet UILabel *quantityLabel;
 
 @end
