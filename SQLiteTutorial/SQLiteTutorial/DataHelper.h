@@ -17,5 +17,4 @@
 -(NSArray *)fetchAllissues;
 -(BOOL)createDB;
 -(BOOL)createIssueWithName:(NSString*)issueName issueDescription:(NSString*)description;
--(NSArray*) findByRegisterNumber:(NSString*)registerNumber;
 @end

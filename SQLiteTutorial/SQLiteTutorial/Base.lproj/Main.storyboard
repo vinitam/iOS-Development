@@ -15,15 +15,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="KmP-kb-F8V" kind="relationship" relationship="viewControllers" id="TFQ-sI-yQU"/>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ZhF-Zs-H94"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="RTa-m3-Ux0"/>
+                        <segue destination="KmP-kb-F8V" kind="relationship" relationship="viewControllers" id="3AE-vu-187"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6sg-BA-QMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-445.5" y="298.5"/>
         </scene>
-        <!--Item-->
+        <!--Issue list-->
         <scene sceneID="jKl-55-7MO">
             <objects>
                 <viewController id="KmP-kb-F8V" customClass="IssuesViewController" sceneMemberID="viewController">
@@ -76,13 +76,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="vxg-FS-bqe"/>
+                    <tabBarItem key="tabBarItem" title="Issue list" id="vxg-FS-bqe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5JE-aO-bET" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="271.5" y="-241.5"/>
         </scene>
-        <!--Item-->
+        <!--Raise an issue-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RegisterViewController" sceneMemberID="viewController">
@@ -205,17 +205,17 @@
                                 <exclude reference="gSf-Ij-Vmx"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="K22-dr-rM6"/>
+                                <exclude reference="scW-lA-5jD"/>
                                 <exclude reference="1Kw-nE-tKt"/>
                                 <exclude reference="9qx-8h-ndK"/>
                                 <exclude reference="UoA-nb-7jQ"/>
                                 <exclude reference="fP8-jq-RTx"/>
-                                <exclude reference="K22-dr-rM6"/>
-                                <exclude reference="scW-lA-5jD"/>
+                                <exclude reference="0iC-jW-aQ8"/>
+                                <exclude reference="Lt6-Qm-hgg"/>
                                 <exclude reference="AMp-Dq-9Cr"/>
                                 <exclude reference="Cj9-jh-zqf"/>
                                 <exclude reference="bN3-aV-lhi"/>
-                                <exclude reference="0iC-jW-aQ8"/>
-                                <exclude reference="Lt6-Qm-hgg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -226,21 +226,21 @@
                                 <include reference="gSf-Ij-Vmx"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="K22-dr-rM6"/>
+                                <include reference="scW-lA-5jD"/>
                                 <include reference="1Kw-nE-tKt"/>
                                 <include reference="9qx-8h-ndK"/>
                                 <include reference="UoA-nb-7jQ"/>
                                 <include reference="fP8-jq-RTx"/>
-                                <include reference="K22-dr-rM6"/>
-                                <include reference="scW-lA-5jD"/>
+                                <include reference="0iC-jW-aQ8"/>
+                                <include reference="Lt6-Qm-hgg"/>
                                 <include reference="AMp-Dq-9Cr"/>
                                 <include reference="Cj9-jh-zqf"/>
                                 <include reference="bN3-aV-lhi"/>
-                                <include reference="0iC-jW-aQ8"/>
-                                <include reference="Lt6-Qm-hgg"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="xVd-3O-tEQ"/>
+                    <tabBarItem key="tabBarItem" title="Raise an issue" id="xVd-3O-tEQ"/>
                     <connections>
                         <outlet property="descLabel" destination="Bsn-Xl-wwM" id="xOP-aD-jbu"/>
                         <outlet property="nameLabel" destination="s6A-XL-dwG" id="fbf-oE-mCP"/>

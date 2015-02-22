@@ -34,7 +34,7 @@
         mailer.mailComposeDelegate = self;
         [mailer setSubject:@"Sample Mail app"];
         
-        NSArray *usersTo = [NSArray arrayWithObject: @"test@@apple.com"];
+        NSArray *usersTo = [NSArray arrayWithObject: @"test@apple.com"];
         [mailer setToRecipients:usersTo];
         
         UIImage *myImage = [UIImage imageNamed:@"landscape"];
@@ -106,7 +106,12 @@
             break;
     }
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [controller dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(IBAction)buttonCallClicked:(id)sender
+{
+    [[UIApplication sharedApplication]openURL:[NSURL URLWithString:@"tel://0000000000"]];
 }
 
 @end

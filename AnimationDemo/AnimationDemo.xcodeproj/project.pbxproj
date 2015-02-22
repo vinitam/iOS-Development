@@ -15,6 +15,7 @@
 		F2ABD7521A97722C00F8E96E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD7501A97722C00F8E96E /* LaunchScreen.xib */; };
 		F2ABD75E1A97722D00F8E96E /* AnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ABD75D1A97722D00F8E96E /* AnimationDemoTests.m */; };
 		F2ABD7681A9772B500F8E96E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD7671A9772B500F8E96E /* 1.png */; };
+		F2ABD76A1A9793F600F8E96E /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = F2ABD7691A9793F600F8E96E /* 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		F2ABD75C1A97722D00F8E96E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2ABD75D1A97722D00F8E96E /* AnimationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationDemoTests.m; sourceTree = "<group>"; };
 		F2ABD7671A9772B500F8E96E /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		F2ABD7691A9793F600F8E96E /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				F2ABD74B1A97722C00F8E96E /* Main.storyboard */,
 				F2ABD74E1A97722C00F8E96E /* Images.xcassets */,
 				F2ABD7671A9772B500F8E96E /* 1.png */,
+				F2ABD7691A9793F600F8E96E /* 2.png */,
 				F2ABD7501A97722C00F8E96E /* LaunchScreen.xib */,
 				F2ABD7411A97722C00F8E96E /* Supporting Files */,
 			);
@@ -204,6 +207,7 @@
 			files = (
 				F2ABD74D1A97722C00F8E96E /* Main.storyboard in Resources */,
 				F2ABD7681A9772B500F8E96E /* 1.png in Resources */,
+				F2ABD76A1A9793F600F8E96E /* 2.png in Resources */,
 				F2ABD7521A97722C00F8E96E /* LaunchScreen.xib in Resources */,
 				F2ABD74F1A97722C00F8E96E /* Images.xcassets in Resources */,
 			);
@@ -418,6 +422,7 @@
 				F2ABD7631A97722D00F8E96E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2ABD7641A97722D00F8E96E /* Build configuration list for PBXNativeTarget "AnimationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				F2ABD7661A97722D00F8E96E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

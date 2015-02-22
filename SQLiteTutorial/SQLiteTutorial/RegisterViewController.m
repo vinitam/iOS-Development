@@ -19,6 +19,7 @@
 - (void)viewDidLoad
 {
     UITapGestureRecognizer *singleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard:)];
+    singleTapGestureRecognizer.numberOfTapsRequired = 2;
     [self.view addGestureRecognizer:singleTapGestureRecognizer];
     
     [super viewDidLoad];
@@ -26,7 +27,7 @@
 }
 
 
--(void)dismissKeyboard:(id)sender
+-(void)dismissKeyboard:(UITapGestureRecognizer *)recogniser
 {
     [self.nameLabel resignFirstResponder];
     [self.descLabel resignFirstResponder];

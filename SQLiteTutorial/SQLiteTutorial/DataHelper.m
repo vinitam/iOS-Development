@@ -22,6 +22,7 @@ static sqlite3_stmt *statement = nil;
     return sharedInstance;
 }
 
+
 -(BOOL)createDB{
     NSString *docsDir;
     NSArray *dirPaths;
@@ -32,7 +33,7 @@ static sqlite3_stmt *statement = nil;
     docsDir = [dirPaths objectAtIndex:0];
     
     // Build the path to the database file
-    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"issues.db"]];
+    databasePath = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent: @"issues.sqlite"]];
     
     NSFileManager *filemgr = [NSFileManager defaultManager];
     

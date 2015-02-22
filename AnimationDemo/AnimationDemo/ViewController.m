@@ -30,6 +30,7 @@
 
 -(void)changeAlpha
 {
+
     [UIView animateWithDuration:3.0 animations:^{
         self.imageView.alpha = 0.0;
     }];
@@ -38,17 +39,21 @@
 -(void)changeAlphaWithDelay
 {
     [UIView animateWithDuration:3.0
-                          delay: 2.0
-                        options: UIViewAnimationOptionTransitionFlipFromLeft
+                          delay: 5.0
+                        options: UIViewAnimationOptionTransitionFlipFromTop
                      animations:^{
                          self.imageView.alpha = 0.0;
                      }
-                     completion:nil];
+                     completion:^(BOOL finished) {
+                         self.imageView.alpha = 1.0;
+
+                     }];
+
 }
 
 -(void)setScaleTransform
 {
-    self.imageView.transform = CGAffineTransformMakeScale(2, 2);
+    self.imageView.transform = CGAffineTransformMakeScale(0.5, 0.5);
 
 }
 
@@ -69,7 +74,7 @@
 -(void)animateView
 {
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
     [animation setFromValue:[NSNumber numberWithFloat:1.3f]];
     [animation setToValue:[NSNumber numberWithFloat:1.f]];
     [animation setDuration:2.f];
