@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DrinkCategory" representedClassName="DrinkCategory" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category_drink" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Drinks" inverseName="drink_category" inverseEntity="Drinks" syncable="YES"/>
+    </entity>
+    <entity name="Drinks" representedClassName="Drinks" syncable="YES">
+        <attribute name="ingredients" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="instructions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="drink_category" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="DrinkCategory" inverseName="category_drink" inverseEntity="DrinkCategory" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Drinks" positionX="-9" positionY="36" width="128" height="103"/>
+        <element name="DrinkCategory" positionX="0" positionY="72" width="128" height="75"/>
+    </elements>
+</model>
