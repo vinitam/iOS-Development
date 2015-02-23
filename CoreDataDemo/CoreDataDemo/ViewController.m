@@ -20,9 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self fetchDataFromSever];
-    
-    // Do any additional setup after loading the view, typically from a nib.
+    if([[self fetchSeasonData] count] > 0)
+    {
+        self.tableData = [self fetchSeasonData];
+        [self.tableView reloadData];
+    }
+    else
+    {
+        [self fetchDataFromSever];
+    }
 }
 
        
