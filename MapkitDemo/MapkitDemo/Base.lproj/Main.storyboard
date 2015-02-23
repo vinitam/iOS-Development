@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="V3s-Wn-LFt">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nYT-2L-llw"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V3s-Wn-LFt" secondAttribute="bottom" id="15F-Xp-fsI"/>
+                            <constraint firstItem="V3s-Wn-LFt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ls6-WH-x3j"/>
+                            <constraint firstAttribute="trailing" secondItem="V3s-Wn-LFt" secondAttribute="trailing" id="iAC-O3-H81"/>
+                            <constraint firstItem="V3s-Wn-LFt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rat-2c-BIz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="V3s-Wn-LFt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Ls6-WH-x3j"/>
+                                <exclude reference="iAC-O3-H81"/>
+                                <exclude reference="rat-2c-BIz"/>
+                                <exclude reference="15F-Xp-fsI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="V3s-Wn-LFt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Ls6-WH-x3j"/>
+                                <include reference="iAC-O3-H81"/>
+                                <include reference="rat-2c-BIz"/>
+                                <include reference="15F-Xp-fsI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="V3s-Wn-LFt" id="IGs-wj-EcG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
