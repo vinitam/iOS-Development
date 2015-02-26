@@ -14,8 +14,8 @@
 		F2D4B2F31A9B5D5700B6FE15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D4B2F21A9B5D5700B6FE15 /* Images.xcassets */; };
 		F2D4B2F61A9B5D5700B6FE15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D4B2F41A9B5D5700B6FE15 /* LaunchScreen.xib */; };
 		F2D4B3021A9B5D5700B6FE15 /* VideoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4B3011A9B5D5700B6FE15 /* VideoDemoTests.m */; };
-		F2D4B30C1A9B5D8000B6FE15 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D4B30B1A9B5D8000B6FE15 /* MediaPlayer.framework */; };
 		F2D4B30E1A9B5ED000B6FE15 /* lego.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F2D4B30D1A9B5E8B00B6FE15 /* lego.mp4 */; };
+		F2D4B3751A9B7FD000B6FE15 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D4B30B1A9B5D8000B6FE15 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2D4B30C1A9B5D8000B6FE15 /* MediaPlayer.framework in Frameworks */,
+				F2D4B3751A9B7FD000B6FE15 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

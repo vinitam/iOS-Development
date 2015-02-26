@@ -19,10 +19,16 @@
 
 - (void)viewDidLoad
 {
-    
-
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    NSString *sampleString = @"23/06/2016 12:50:34";
+    [dateFormatter setDateFormat:@"dd/MM/yyyy HH:mm:ss"];
+    NSDate *sampleDate = [dateFormatter dateFromString:sampleString];
+    [dateFormatter setDateFormat:@"dd MMM yyyy hh:mm:ss a"];
+    NSString *formattedString = [dateFormatter stringFromDate:sampleDate];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,12 +39,17 @@
 -(IBAction)displayTodaysDate:(id)sender
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"HH:mm:ss"];
+    [dateFormatter setDateFormat:@"hh:mm:ss a"];
     self.formatted3Label.text = [dateFormatter stringFromDate:[NSDate date]];
+    
+    
     [dateFormatter setDateFormat:@"dd/MM/yyyy"];
     self.formatted1Label.text = [dateFormatter stringFromDate:[NSDate date]];
+    
     [dateFormatter setDateFormat:@"dd/MM/yyyy hh:mm:ss"];
     self.formatted2Label.text = [dateFormatter stringFromDate:[NSDate date]];
+    
+
     
 }
 

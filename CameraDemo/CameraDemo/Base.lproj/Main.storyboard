@@ -110,12 +110,12 @@
                                 <exclude reference="u2E-TF-VsT"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="bYV-Ef-ADL"/>
-                                <exclude reference="yjH-1S-RxB"/>
                                 <exclude reference="qGu-0m-Wgy"/>
                                 <exclude reference="xKt-hh-lV6"/>
                                 <exclude reference="VqL-Z8-SBr"/>
                                 <exclude reference="ae9-vO-zHE"/>
+                                <exclude reference="bYV-Ef-ADL"/>
+                                <exclude reference="yjH-1S-RxB"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -125,12 +125,12 @@
                                 <include reference="u2E-TF-VsT"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="bYV-Ef-ADL"/>
-                                <include reference="yjH-1S-RxB"/>
                                 <include reference="qGu-0m-Wgy"/>
                                 <include reference="xKt-hh-lV6"/>
                                 <include reference="VqL-Z8-SBr"/>
                                 <include reference="ae9-vO-zHE"/>
+                                <include reference="bYV-Ef-ADL"/>
+                                <include reference="yjH-1S-RxB"/>
                             </mask>
                         </variation>
                     </view>

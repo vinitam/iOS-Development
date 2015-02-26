@@ -35,10 +35,10 @@
                                 <exclude reference="V3s-Wn-LFt"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="15F-Xp-fsI"/>
                                 <exclude reference="Ls6-WH-x3j"/>
                                 <exclude reference="iAC-O3-H81"/>
                                 <exclude reference="rat-2c-BIz"/>
-                                <exclude reference="15F-Xp-fsI"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -46,10 +46,10 @@
                                 <include reference="V3s-Wn-LFt"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="15F-Xp-fsI"/>
                                 <include reference="Ls6-WH-x3j"/>
                                 <include reference="iAC-O3-H81"/>
                                 <include reference="rat-2c-BIz"/>
-                                <include reference="15F-Xp-fsI"/>
                             </mask>
                         </variation>
                     </view>

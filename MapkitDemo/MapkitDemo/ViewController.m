@@ -23,7 +23,6 @@
     // Do any additional setup after loading the view.
     
     
-    self.mapView.delegate = self;
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
 #ifdef __IPHONE_8_0
@@ -56,10 +55,10 @@
 //    region.span.longitudeDelta = 0.005f;
 //    region.span.longitudeDelta = 0.005f;
 //    [self.mapView setRegion:region animated:YES];
-//    
+    
 }
 
-//Current location
+////Current location
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
     //Shows the region

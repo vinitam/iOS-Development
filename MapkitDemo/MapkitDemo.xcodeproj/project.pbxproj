@@ -14,7 +14,7 @@
 		F2D4B35B1A9B616900B6FE15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D4B35A1A9B616900B6FE15 /* Images.xcassets */; };
 		F2D4B35E1A9B616900B6FE15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D4B35C1A9B616900B6FE15 /* LaunchScreen.xib */; };
 		F2D4B36A1A9B616900B6FE15 /* MapkitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4B3691A9B616900B6FE15 /* MapkitDemoTests.m */; };
-		F2D4B3741A9B619E00B6FE15 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D4B3731A9B619E00B6FE15 /* MapKit.framework */; };
+		F2D4B3761A9B862400B6FE15 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D4B3731A9B619E00B6FE15 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2D4B3741A9B619E00B6FE15 /* MapKit.framework in Frameworks */,
+				F2D4B3761A9B862400B6FE15 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +418,7 @@
 				F2D4B36F1A9B616900B6FE15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2D4B3701A9B616900B6FE15 /* Build configuration list for PBXNativeTarget "MapkitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +427,7 @@
 				F2D4B3721A9B616900B6FE15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
