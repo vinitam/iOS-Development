@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Manga.h"
 @interface MangaDetailViewController : UIViewController
-@property(nonatomic)NSDictionary *mangaDictionary;
+@property(nonatomic)Manga *manga;
 @property(nonatomic)NSDictionary *mangaDetailsDictionary;
 @end
