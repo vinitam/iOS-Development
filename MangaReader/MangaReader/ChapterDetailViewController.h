@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ChapterDetailViewController : UIViewController
-
+@property(nonatomic)NSString *chapterUrl;
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "MangaDetailViewController.h"
-
+#import "ChapterDetailViewController.h"
 @interface MangaDetailViewController ()
 @property(nonatomic,weak)IBOutlet UILabel *descriptionLabel;
 @property(nonatomic,weak)IBOutlet UIImageView *mangaImage;
@@ -86,6 +86,15 @@
     NSArray *chapterArray = [self.chapters objectAtIndex:[self.chapters count]- indexPath.row-1];
     cell.textLabel.text = [NSString stringWithFormat:@"CHAPTER: %@",[chapterArray objectAtIndex:0]];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *chapterArray = [self.chapters objectAtIndex:[self.chapters count]- indexPath.row-1];
+    
+    ChapterDetailViewController *chapterDetailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ChapterDetailViewController"];
+    chapterDetailViewController.chapterUrl = [NSString stringWithFormat:@"https://www.mangaeden.com/api/chapter/%@",[chapterArray objectAtIndex:3]];
+    [self.navigationController pushViewController:chapterDetailViewController animated:YES];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
