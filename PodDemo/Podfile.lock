@@ -1,0 +1,10 @@
+PODS:
+  - EBPhotoPages (0.9.1)
+
+DEPENDENCIES:
+  - EBPhotoPages (~> 0.9.1)
+
+SPEC CHECKSUMS:
+  EBPhotoPages: 7cdaab9b1efb5709f81597d62f153bdf23abf672
+
+COCOAPODS: 0.35.0

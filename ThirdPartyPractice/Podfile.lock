@@ -1,0 +1,16 @@
+PODS:
+  - DSLCalendarView (0.0.1)
+  - iOS-Slide-Menu (1.4.5)
+  - JTCalendar (1.1.17)
+
+DEPENDENCIES:
+  - DSLCalendarView (~> 0.0.1)
+  - iOS-Slide-Menu (~> 1.4.0)
+  - JTCalendar (~> 1.1)
+
+SPEC CHECKSUMS:
+  DSLCalendarView: b4d69604c49911614b63cd7393735d707fe41b94
+  iOS-Slide-Menu: 3037b28b483ad0191b2a8b0644dec57995631c1d
+  JTCalendar: 326a2223ecd07fc0ec2648e0df4d020b66983444
+
+COCOAPODS: 0.35.0
