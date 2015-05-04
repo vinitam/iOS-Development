@@ -16,6 +16,9 @@
 		AE5ADFD41A6EA02F00C38EA8 /* PropertiesTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5ADFD31A6EA02F00C38EA8 /* PropertiesTutorialTests.m */; };
 		F294EF1D1A834FAD001F47FE /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = F294EF1C1A834FAD001F47FE /* Car.m */; };
 		F294EF201A834FBD001F47FE /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F294EF1F1A834FBD001F47FE /* Person.m */; };
+		F2CCA6721AF2844E002D4F4D /* Bus.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CCA6711AF2844E002D4F4D /* Bus.m */; };
+		F2CCA6751AF284DB002D4F4D /* Aircraft.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CCA6741AF284DB002D4F4D /* Aircraft.m */; };
+		F2CCA6781AF28680002D4F4D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CCA6771AF28680002D4F4D /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,12 @@
 		F294EF1C1A834FAD001F47FE /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		F294EF1E1A834FBD001F47FE /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		F294EF1F1A834FBD001F47FE /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F2CCA6701AF2844E002D4F4D /* Bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bus.h; sourceTree = "<group>"; };
+		F2CCA6711AF2844E002D4F4D /* Bus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bus.m; sourceTree = "<group>"; };
+		F2CCA6731AF284DB002D4F4D /* Aircraft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aircraft.h; sourceTree = "<group>"; };
+		F2CCA6741AF284DB002D4F4D /* Aircraft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aircraft.m; sourceTree = "<group>"; };
+		F2CCA6761AF28680002D4F4D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		F2CCA6771AF28680002D4F4D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +100,16 @@
 				AE5ADFBC1A6EA02F00C38EA8 /* AppDelegate.m */,
 				AE5ADFBE1A6EA02F00C38EA8 /* ViewController.h */,
 				AE5ADFBF1A6EA02F00C38EA8 /* ViewController.m */,
+				F2CCA6761AF28680002D4F4D /* FirstViewController.h */,
+				F2CCA6771AF28680002D4F4D /* FirstViewController.m */,
 				F294EF1B1A834FAD001F47FE /* Car.h */,
 				F294EF1C1A834FAD001F47FE /* Car.m */,
 				F294EF1E1A834FBD001F47FE /* Person.h */,
 				F294EF1F1A834FBD001F47FE /* Person.m */,
+				F2CCA6701AF2844E002D4F4D /* Bus.h */,
+				F2CCA6711AF2844E002D4F4D /* Bus.m */,
+				F2CCA6731AF284DB002D4F4D /* Aircraft.h */,
+				F2CCA6741AF284DB002D4F4D /* Aircraft.m */,
 				AE5ADFC11A6EA02F00C38EA8 /* Main.storyboard */,
 				AE5ADFC41A6EA02F00C38EA8 /* Images.xcassets */,
 				AE5ADFC61A6EA02F00C38EA8 /* LaunchScreen.xib */,
@@ -229,11 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2CCA6721AF2844E002D4F4D /* Bus.m in Sources */,
 				AE5ADFC01A6EA02F00C38EA8 /* ViewController.m in Sources */,
 				AE5ADFBD1A6EA02F00C38EA8 /* AppDelegate.m in Sources */,
 				F294EF201A834FBD001F47FE /* Person.m in Sources */,
 				F294EF1D1A834FAD001F47FE /* Car.m in Sources */,
+				F2CCA6751AF284DB002D4F4D /* Aircraft.m in Sources */,
 				AE5ADFBA1A6EA02F00C38EA8 /* main.m in Sources */,
+				F2CCA6781AF28680002D4F4D /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

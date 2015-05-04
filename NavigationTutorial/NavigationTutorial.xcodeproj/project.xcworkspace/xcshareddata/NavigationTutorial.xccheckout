@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>0AEA31BE-859B-4D14-8E1F-26AAE24A6D55</string>
 	<key>IDESourceControlProjectName</key>
-	<string>NavigationTutorial</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
 		<string>https://github.com/vinitam/iOS-Development.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>NavigationTutorial/NavigationTutorial.xcodeproj</string>
+	<string>NavigationTutorial/NavigationTutorial.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
