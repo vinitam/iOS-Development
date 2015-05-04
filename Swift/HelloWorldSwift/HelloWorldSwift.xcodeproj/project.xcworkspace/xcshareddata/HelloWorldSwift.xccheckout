@@ -7,18 +7,18 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>70B93FD8-2AF5-4C2F-9509-F27B3AD3ED8F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>HelloWorldSwift</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
 		<string>https://github.com/vinitam/iOS-Development.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HelloWorldSwift/HelloWorldSwift.xcodeproj/project.xcworkspace</string>
+	<string>Swift/HelloWorldSwift/HelloWorldSwift.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/vinitam/iOS-Development.git</string>

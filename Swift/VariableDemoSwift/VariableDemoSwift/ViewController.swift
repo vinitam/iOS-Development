@@ -12,28 +12,34 @@ class ViewController: UIViewController {
 
     //String
     var sampleInitString = "Hi"
-    var sampleNonInitString : String!
+    var sampleNonInitString : String?
     
     //Int
     var sampleInitInt = 42
-    var sampleNonInitInt : Int!
+    var sampleNonInitInt : Int?
     
     //Float
     var sampleInitFloat = 42.0
-    var sampleNonInitFloat : Float!
+    var sampleNonInitFloat : Float?
     
     //Array
     var sampleInitArray = ["1" , "2" , "3" , "4"]
-    var sampleNonInitArray : [String]!
+    var sampleNonInitArray : [String]?
     
     //Dictionary
     var sampleInitDictionary = ["1" : ["A", "B" , "C"], "2" :  ["D", "E" , "F"], "3" : ["G", "H" , "I"]]
-    var sampleNonInitDictionary : [String]!
+    var sampleNonInitDictionary : [String : [Int]]?
     
+    let sampleConstDictionary = ["1" : ["A", "B" , "C"], "2" :  ["D", "E" , "F"], "3" : ["G", "H" , "I"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        if sampleNonInitString != nil
+        {
+            println("\(self.sampleNonInitString)")
+        }
+    
     }
 
     override func didReceiveMemoryWarning() {
