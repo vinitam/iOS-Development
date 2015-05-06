@@ -10,20 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         var optionalString : String?
         
-        optionalString = "This is an optional string"
-        
-        println(optionalString!)
-        
         var optionalString1 : String!
         
-        optionalString1 = "This is second optional string"
+        var optionalString2 : String
+
         
+        optionalString = "Hello"
+        
+
         println(optionalString1)
+        
+        if optionalString != nil
+        {
+            println(optionalString!)
+        }
         
         
         

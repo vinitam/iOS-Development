@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 @property (readwrite) int count;
 @property (nonatomic,assign)BOOL isVisible;
+@property(nonatomic)BOOL isRunning;
 @property (nonatomic)BOOL test;
 @property(nonatomic,weak)IBOutlet UILabel *titleLabel;
 @property(nonatomic,weak)IBOutlet UILabel *subTitleLabel;

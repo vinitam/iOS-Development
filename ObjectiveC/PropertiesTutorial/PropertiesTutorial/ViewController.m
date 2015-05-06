@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
 
+    self.isVisible = self.isRunning;
+    
     self.titleLabel.text = @"Hello";
     
     [super viewDidLoad];
