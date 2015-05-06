@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DEDBE839-C4BB-4276-A7E7-68CF2A8D9C29</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>LabelSwift</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
 		<string>https://github.com/vinitam/iOS-Development.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Swift/LabelSwift/LabelSwift.xcodeproj/project.xcworkspace</string>
+	<string>Swift/LabelSwift/LabelSwift.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>

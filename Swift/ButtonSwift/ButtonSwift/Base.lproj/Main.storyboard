@@ -16,20 +16,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JtH-iD-3VH">
-                                <rect key="frame" x="30" y="52" width="180" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8J-rA-FoX">
+                                <rect key="frame" x="218" y="280" width="164" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="A6g-7N-VVU"/>
+                                    <constraint firstAttribute="width" constant="164" id="X00-0f-oPd"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="60" maxY="0.0"/>
+                                <state key="normal" title="Click Me">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cfp-ka-Exq"/>
+                                    <action selector="greetingButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fCc-eg-xWz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="P8J-rA-FoX" secondAttribute="centerX" id="8A0-eV-z9V"/>
+                            <constraint firstAttribute="centerY" secondItem="P8J-rA-FoX" secondAttribute="centerY" id="diz-YX-mcx"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="button" destination="JtH-iD-3VH" id="hOM-eT-Ixa"/>
+                        <outlet property="greetButton" destination="P8J-rA-FoX" id="dMZ-CB-hwk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

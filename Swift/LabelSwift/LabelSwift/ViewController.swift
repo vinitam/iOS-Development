@@ -10,13 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var sumLabel: UILabel!
+    
+    var firstNumber = 10
+    var secondNumber : Int = 15
     
     override func viewDidLoad() {
-        self.label.text = "Sample text"
-        self.label.backgroundColor = UIColor.greenColor()
-        self.label.textColor = UIColor.whiteColor()
-        
+        self.sumLabel.text = "The sum is: \(firstNumber + secondNumber) hjdgdhjgdsjhsddhsgdshdsbhdsbdhsdbshdbds"
+        self.sumLabel.backgroundColor = UIColor.yellowColor()
+        self.sumLabel.textColor = UIColor.blackColor()
+        self.sumLabel.textAlignment = NSTextAlignment.Center
+
     }
 
     override func didReceiveMemoryWarning() {

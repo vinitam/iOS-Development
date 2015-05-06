@@ -11,11 +11,27 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var toolBar: UIToolbar!
-    @IBOutlet weak var item1: UIBarButtonItem!
-    @IBOutlet weak var item2: UIBarButtonItem!
     
-    @IBAction func barButtonClicked(sender: AnyObject) {
-        
+    @IBOutlet weak var outputLabel: UILabel!
+    
+    @IBAction func itemClicked(sender: AnyObject)
+    {
+        self.toolBar.tintColor = UIColor.redColor()
+        self.outputLabel.text = "Item Clicked"
+    }
+
+    @IBAction func item1Clicked(sender: AnyObject)
+    {
+        self.toolBar.tintColor = UIColor.yellowColor()
+        self.outputLabel.text = "Item 1 Clicked"
+    }
+    
+    @IBAction func item2Clicked(sender: AnyObject)
+    {
+        self.toolBar.tintColor = UIColor.blueColor()
+
+        self.outputLabel.text = "Item 2 Clicked"
+
     }
     
     override func viewDidLoad() {

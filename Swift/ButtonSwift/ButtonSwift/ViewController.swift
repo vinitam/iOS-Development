@@ -10,18 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var button: UIButton!
+    
+    @IBOutlet weak var greetButton: UIButton!
     
     
-    @IBAction func buttonClicked(sender: AnyObject) {
-        self.button.setTitle("Click Me", forState: UIControlState.Normal)
-        self.button.backgroundColor = UIColor.redColor()
+    @IBAction func greetingButtonPressed(sender: AnyObject)
+    {
+        self.greetButton.selected = !self.greetButton.selected
+        self.greetButton.setTitle("Click Me", forState: UIControlState.Normal)
+        self.greetButton.setTitle("Pressed !!!", forState: UIControlState.Selected)
+        
+        if(self.greetButton.selected)
+        {
+            self.greetButton.backgroundColor = UIColor.yellowColor()
+        }
+        else
+        {
+            self.greetButton.backgroundColor = UIColor.redColor()
+        }
     }
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
