@@ -9,30 +9,41 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
 
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector(animateView()), userInfo: nil, repeats: false)
-    }
-
-    func animateView()
-    {
-        var animation : CABasicAnimation.anim
-        animation = CABasicAnimation.anim
-        
-        
-        
-        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-        [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear]];
-        [animation setFromValue:[NSNumber numberWithFloat:1.3f]];
-        [animation setToValue:[NSNumber numberWithFloat:1.f]];
-        [animation setDuration:2.f];
-        [animation setRemovedOnCompletion:NO];
-        [[self.imageView layer] addAnimation:animation forKey:@"scale"];
     }
     
-    @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    
+        override func viewDidAppear(animated: Bool) {
+            super.viewDidAppear(animated)
+            self.imageView.alpha = 0.0
+
+            //fade in
+            UIView.animateWithDuration(2.0, delay: 2.0, options: .TransitionFlipFromRight, animations: {
+                self.imageView.alpha = 1.0
+                self.imageView.layoutIfNeeded()
+                }, completion: {_ in
+                    self.animateImageOffset()
+            })
+        }
+
+    func animateImageOffset()
+    {
+        
+        UIView.animateWithDuration(3, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+                self.topConstraint.constant = 300
+            self.imageView.image = UIImage(named: "2.png")
+
+                self.imageView.layoutIfNeeded()
+            }, completion: {_ in
+                
+            })
+
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -22,7 +22,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.textField.keyboardType = UIKeyboardType.ASCIICapable
         
     }
-    
+
+
+
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
 
        return true

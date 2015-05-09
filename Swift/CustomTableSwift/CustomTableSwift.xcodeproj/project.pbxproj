@@ -14,6 +14,7 @@
 		F233420C1AFB447C0056590E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F233420A1AFB447C0056590E /* LaunchScreen.xib */; };
 		F23342181AFB447C0056590E /* CustomTableSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23342171AFB447C0056590E /* CustomTableSwiftTests.swift */; };
 		F23342221AFB449F0056590E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23342211AFB449F0056590E /* CustomTableViewCell.swift */; };
+		F23343A01AFBCD4E0056590E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F233439F1AFBCD4E0056590E /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		F23342161AFB447C0056590E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23342171AFB447C0056590E /* CustomTableSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableSwiftTests.swift; sourceTree = "<group>"; };
 		F23342211AFB449F0056590E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		F233439F1AFBCD4E0056590E /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				F23342011AFB447C0056590E /* AppDelegate.swift */,
 				F23342031AFB447C0056590E /* ViewController.swift */,
+				F233439F1AFBCD4E0056590E /* CustomCell.swift */,
 				F23342211AFB449F0056590E /* CustomTableViewCell.swift */,
 				F23342051AFB447C0056590E /* Main.storyboard */,
 				F23342081AFB447C0056590E /* Images.xcassets */,
@@ -217,6 +220,7 @@
 			files = (
 				F23342221AFB449F0056590E /* CustomTableViewCell.swift in Sources */,
 				F23342041AFB447C0056590E /* ViewController.swift in Sources */,
+				F23343A01AFBCD4E0056590E /* CustomCell.swift in Sources */,
 				F23342021AFB447C0056590E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +417,7 @@
 				F233421D1AFB447C0056590E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F233421E1AFB447C0056590E /* Build configuration list for PBXNativeTarget "CustomTableSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				F23342201AFB447C0056590E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

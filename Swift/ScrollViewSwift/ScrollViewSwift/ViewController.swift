@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
-    var imageArray : [String] = ["no_alcohol" ,"no_cash"]
+    var imageArray = ["no_alcohol" ,"no_cash"]
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,10 +21,10 @@ class ViewController: UIViewController {
             var xCordinate : CGFloat = self.view.frame.size.width * CGFloat(i)
 
             var imageView =  UIImageView(frame: CGRectMake(xCordinate, 0, self.view.frame.size.width, self.view.frame.size.height))
+            
             imageView.contentMode = UIViewContentMode.ScaleAspectFit
             var image = UIImage(named: imageArray[i])
             imageView.image = image
-            xCordinate = xCordinate + self.view.frame.size.width
             self.scrollView.addSubview(imageView)
         }
         

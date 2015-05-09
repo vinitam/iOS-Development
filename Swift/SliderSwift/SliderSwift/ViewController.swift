@@ -13,8 +13,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.slider.minimumValue = 1.0
-        self.slider.maximumValue = 2.0
+        self.slider.minimumValue = 7.0
+        self.slider.maximumValue = 10.0
         
     }
 

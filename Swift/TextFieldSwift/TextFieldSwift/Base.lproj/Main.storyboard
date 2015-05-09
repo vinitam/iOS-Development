@@ -21,7 +21,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="IL9-0c-xqf"/>
+                                    <action selector="beginEditing:" destination="vXZ-lx-hvc" eventType="editingDidBegin" id="eqZ-Qd-4QG"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="G5j-iJ-s8e"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ApY-fX-oBh">

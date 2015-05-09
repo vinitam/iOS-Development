@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var switchView: UISwitch!
     
     override func viewDidLoad() {
@@ -22,7 +22,9 @@ class ViewController: UIViewController {
 
     }
 
+    
     @IBAction func switchValueChanged(sender: AnyObject) {
+        
         if(self.switchView.on)
         {
             self.view.backgroundColor = UIColor.redColor()
@@ -30,10 +32,11 @@ class ViewController: UIViewController {
         else
         {
             self.view.backgroundColor = UIColor.yellowColor()
-
+            
         }
         
     }
+
 
 }
 

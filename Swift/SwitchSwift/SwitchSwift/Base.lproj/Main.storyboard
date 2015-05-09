@@ -16,14 +16,14 @@
                                 <rect key="frame" x="136" y="49" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="switchValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="NU7-a0-1dk"/>
+                                    <action selector="switchValueChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="VAZ-xb-0xU"/>
                                 </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="switchView" destination="uoV-nx-hu2" id="gpU-7v-9sV"/>
+                        <outlet property="switchView" destination="uoV-nx-hu2" id="yzo-gK-HMl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

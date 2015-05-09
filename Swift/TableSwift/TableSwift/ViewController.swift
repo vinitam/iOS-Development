@@ -32,9 +32,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     {
         let cell:UITableViewCell=UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "mycell")
         cell.textLabel!.text="Row \(indexPath.row)"
-        
+        cell.detailTextLabel!.text="Detailed Row \(indexPath.row)"
+        cell.imageView!.image = UIImage(named: "no_cash-1")
         return cell
     }
 
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("Row \(indexPath.row) clicked")
+    }
 }
 

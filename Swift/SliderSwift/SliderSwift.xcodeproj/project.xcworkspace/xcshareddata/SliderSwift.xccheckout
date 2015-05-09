@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>EA2E6AFD-70C0-4495-AFC0-5E742B94CC1F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SliderSwift</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
 		<string>https://github.com/vinitam/iOS-Development.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Swift/SliderSwift/SliderSwift.xcodeproj/project.xcworkspace</string>
+	<string>Swift/SliderSwift/SliderSwift.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UIAlertViewDelegate {
 
     @IBOutlet weak var switchView: UISwitch!
     
@@ -26,10 +26,16 @@ class ViewController: UIViewController {
     @IBAction func switchedValueChanged(sender: AnyObject) {
         var message = self.switchView.on ? "on" : "off"
         
-        var alertview = UIAlertView(title: "Alert", message: "The switch is \(message)", delegate: nil, cancelButtonTitle: "OK")
+        
+        var alertview = UIAlertView(title: "Alert", message: "The switch is \(message)", delegate: self, cancelButtonTitle: "OK", otherButtonTitles: "A", "B")
+
         alertview.show()
     }
     
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int)
+    {
+        
+    }
 
 }
 

@@ -417,6 +417,7 @@
 				F233424D1AFB45900056590E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F233424E1AFB45900056590E /* Build configuration list for PBXNativeTarget "CustomXibTableSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +426,7 @@
 				F23342501AFB45900056590E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
