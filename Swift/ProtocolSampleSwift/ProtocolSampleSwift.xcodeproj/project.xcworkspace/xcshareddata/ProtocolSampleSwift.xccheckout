@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>5728D8A8-9FFB-4679-B75C-DE0BD5C9D61A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>ProtocolSampleSwift</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
 		<string>https://github.com/vinitam/iOS-Development.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Swift/ProtocolSampleSwift/ProtocolSampleSwift.xcodeproj/project.xcworkspace</string>
+	<string>Swift/ProtocolSampleSwift/ProtocolSampleSwift.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var computation = getPrice(16)
+        var computation = getPrice(20)
         println(computation)
 
         var result = computation(8)

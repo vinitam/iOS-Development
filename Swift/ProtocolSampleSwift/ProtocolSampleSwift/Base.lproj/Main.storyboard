@@ -61,6 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="202.5" y="238.5"/>
         </scene>
         <!--Detailed View Controller-->
         <scene sceneID="4af-61-ed1">
@@ -82,14 +83,14 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="ow6-HB-wWo"/>
                                         <exclude reference="Rvt-98-Uhe"/>
+                                        <exclude reference="ow6-HB-wWo"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="ow6-HB-wWo"/>
                                         <include reference="Rvt-98-Uhe"/>
+                                        <include reference="ow6-HB-wWo"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -104,8 +105,8 @@
                                 <exclude reference="I1z-lS-pbV"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="sem-0w-NpD"/>
                                 <exclude reference="bTN-jT-iw4"/>
+                                <exclude reference="sem-0w-NpD"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -113,8 +114,8 @@
                                 <include reference="I1z-lS-pbV"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="sem-0w-NpD"/>
                                 <include reference="bTN-jT-iw4"/>
+                                <include reference="sem-0w-NpD"/>
                             </mask>
                         </variation>
                     </view>

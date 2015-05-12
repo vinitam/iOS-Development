@@ -43,14 +43,14 @@ class ViewController: UIViewController {
     
     func calculateAverage(inputArray : [Double]) -> Double
     {
-        var sum : Double = 0
+        var average : Double = 0
         
         for number in inputArray
         {
-            sum = sum + number
+            average = average + number
         }
         
-        var result: Double = Double(sum) / Double(inputArray.count)
+        var result: Double = Double(average) / Double(inputArray.count)
         
         return result
     }

@@ -21,6 +21,15 @@ extension Float
     }
 }
 
+extension String
+{
+    var addressPerson : String
+    {
+        return "Mr \(self)"
+    }
+}
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -29,6 +38,7 @@ class ViewController: UIViewController {
         println("Currency : \(Float(3).currency)")
         println("Increment : \(Float(5).incrementByOne)")
         
+        println("Amit".addressPerson);
         
     }
 
