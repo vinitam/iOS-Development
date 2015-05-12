@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F29C122D1B024E7900F2E851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29C122C1B024E7900F2E851 /* AppDelegate.swift */; };
+		F29C12301B024E7900F2E851 /* SMSSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F29C122E1B024E7900F2E851 /* SMSSwift.xcdatamodeld */; };
+		F29C12321B024E7900F2E851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29C12311B024E7900F2E851 /* ViewController.swift */; };
+		F29C12351B024E7900F2E851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29C12331B024E7900F2E851 /* Main.storyboard */; };
+		F29C12371B024E7900F2E851 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29C12361B024E7900F2E851 /* Images.xcassets */; };
+		F29C123A1B024E7900F2E851 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29C12381B024E7900F2E851 /* LaunchScreen.xib */; };
+		F29C12461B024E7900F2E851 /* SMSSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29C12451B024E7900F2E851 /* SMSSwiftTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F29C12401B024E7900F2E851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F29C121F1B024E7900F2E851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F29C12261B024E7900F2E851;
+			remoteInfo = SMSSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F29C12271B024E7900F2E851 /* SMSSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMSSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29C122B1B024E7900F2E851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29C122C1B024E7900F2E851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F29C122F1B024E7900F2E851 /* SMSSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SMSSwift.xcdatamodel; sourceTree = "<group>"; };
+		F29C12311B024E7900F2E851 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F29C12341B024E7900F2E851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F29C12361B024E7900F2E851 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F29C12391B024E7900F2E851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F29C123F1B024E7900F2E851 /* SMSSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMSSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F29C12441B024E7900F2E851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F29C12451B024E7900F2E851 /* SMSSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSSwiftTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F29C12241B024E7900F2E851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29C123C1B024E7900F2E851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F29C121E1B024E7900F2E851 = {
+			isa = PBXGroup;
+			children = (
+				F29C12291B024E7900F2E851 /* SMSSwift */,
+				F29C12421B024E7900F2E851 /* SMSSwiftTests */,
+				F29C12281B024E7900F2E851 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F29C12281B024E7900F2E851 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F29C12271B024E7900F2E851 /* SMSSwift.app */,
+				F29C123F1B024E7900F2E851 /* SMSSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F29C12291B024E7900F2E851 /* SMSSwift */ = {
+			isa = PBXGroup;
+			children = (
+				F29C122C1B024E7900F2E851 /* AppDelegate.swift */,
+				F29C12311B024E7900F2E851 /* ViewController.swift */,
+				F29C12331B024E7900F2E851 /* Main.storyboard */,
+				F29C12361B024E7900F2E851 /* Images.xcassets */,
+				F29C12381B024E7900F2E851 /* LaunchScreen.xib */,
+				F29C122E1B024E7900F2E851 /* SMSSwift.xcdatamodeld */,
+				F29C122A1B024E7900F2E851 /* Supporting Files */,
+			);
+			path = SMSSwift;
+			sourceTree = "<group>";
+		};
+		F29C122A1B024E7900F2E851 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F29C122B1B024E7900F2E851 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F29C12421B024E7900F2E851 /* SMSSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				F29C12451B024E7900F2E851 /* SMSSwiftTests.swift */,
+				F29C12431B024E7900F2E851 /* Supporting Files */,
+			);
+			path = SMSSwiftTests;
+			sourceTree = "<group>";
+		};
+		F29C12431B024E7900F2E851 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F29C12441B024E7900F2E851 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F29C12261B024E7900F2E851 /* SMSSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29C12491B024E7900F2E851 /* Build configuration list for PBXNativeTarget "SMSSwift" */;
+			buildPhases = (
+				F29C12231B024E7900F2E851 /* Sources */,
+				F29C12241B024E7900F2E851 /* Frameworks */,
+				F29C12251B024E7900F2E851 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMSSwift;
+			productName = SMSSwift;
+			productReference = F29C12271B024E7900F2E851 /* SMSSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F29C123E1B024E7900F2E851 /* SMSSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F29C124C1B024E7900F2E851 /* Build configuration list for PBXNativeTarget "SMSSwiftTests" */;
+			buildPhases = (
+				F29C123B1B024E7900F2E851 /* Sources */,
+				F29C123C1B024E7900F2E851 /* Frameworks */,
+				F29C123D1B024E7900F2E851 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F29C12411B024E7900F2E851 /* PBXTargetDependency */,
+			);
+			name = SMSSwiftTests;
+			productName = SMSSwiftTests;
+			productReference = F29C123F1B024E7900F2E851 /* SMSSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F29C121F1B024E7900F2E851 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Vinita Miranda";
+				TargetAttributes = {
+					F29C12261B024E7900F2E851 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					F29C123E1B024E7900F2E851 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = F29C12261B024E7900F2E851;
+					};
+				};
+			};
+			buildConfigurationList = F29C12221B024E7900F2E851 /* Build configuration list for PBXProject "SMSSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F29C121E1B024E7900F2E851;
+			productRefGroup = F29C12281B024E7900F2E851 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F29C12261B024E7900F2E851 /* SMSSwift */,
+				F29C123E1B024E7900F2E851 /* SMSSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F29C12251B024E7900F2E851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29C12351B024E7900F2E851 /* Main.storyboard in Resources */,
+				F29C123A1B024E7900F2E851 /* LaunchScreen.xib in Resources */,
+				F29C12371B024E7900F2E851 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29C123D1B024E7900F2E851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F29C12231B024E7900F2E851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29C12321B024E7900F2E851 /* ViewController.swift in Sources */,
+				F29C122D1B024E7900F2E851 /* AppDelegate.swift in Sources */,
+				F29C12301B024E7900F2E851 /* SMSSwift.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29C123B1B024E7900F2E851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F29C12461B024E7900F2E851 /* SMSSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F29C12411B024E7900F2E851 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F29C12261B024E7900F2E851 /* SMSSwift */;
+			targetProxy = F29C12401B024E7900F2E851 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F29C12331B024E7900F2E851 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F29C12341B024E7900F2E851 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F29C12381B024E7900F2E851 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F29C12391B024E7900F2E851 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F29C12471B024E7900F2E851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F29C12481B024E7900F2E851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F29C124A1B024E7900F2E851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SMSSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F29C124B1B024E7900F2E851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SMSSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F29C124D1B024E7900F2E851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SMSSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSSwift.app/SMSSwift";
+			};
+			name = Debug;
+		};
+		F29C124E1B024E7900F2E851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SMSSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SMSSwift.app/SMSSwift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F29C12221B024E7900F2E851 /* Build configuration list for PBXProject "SMSSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29C12471B024E7900F2E851 /* Debug */,
+				F29C12481B024E7900F2E851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F29C12491B024E7900F2E851 /* Build configuration list for PBXNativeTarget "SMSSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29C124A1B024E7900F2E851 /* Debug */,
+				F29C124B1B024E7900F2E851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F29C124C1B024E7900F2E851 /* Build configuration list for PBXNativeTarget "SMSSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F29C124D1B024E7900F2E851 /* Debug */,
+				F29C124E1B024E7900F2E851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F29C122E1B024E7900F2E851 /* SMSSwift.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F29C122F1B024E7900F2E851 /* SMSSwift.xcdatamodel */,
+			);
+			currentVersion = F29C122F1B024E7900F2E851 /* SMSSwift.xcdatamodel */;
+			path = SMSSwift.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F29C121F1B024E7900F2E851 /* Project object */;
+}
