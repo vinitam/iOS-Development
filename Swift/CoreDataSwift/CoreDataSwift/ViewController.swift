@@ -14,24 +14,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        var appDelegate : AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 
         
-        var teacher = NSEntityDescription.insertNewObjectForEntityForName("Teacher",
+        var teacher : Teacher = NSEntityDescription.insertNewObjectForEntityForName("Teacher",
             inManagedObjectContext: appDelegate.managedObjectContext!) as! Teacher
-        
-        
-        
         teacher.name = "Priti"
         teacher.subject = "English"
         
         var student1 : Student = NSEntityDescription.insertNewObjectForEntityForName("Student", inManagedObjectContext: appDelegate.managedObjectContext!) as! Student
-        student1.studentName = "Ravi"
+        student1.studentName = "Ali"
         student1.age = 15
      
         var student2 : Student = NSEntityDescription.insertNewObjectForEntityForName("Student", inManagedObjectContext: appDelegate.managedObjectContext!) as! Student
         student2.studentName = "Reeta"
         student2.age = 20
+        
         teacher.teacher_student = NSSet(array: [student1,student2])
         student1.student_teacher = NSSet(array: [teacher])
         student2.student_teacher = NSSet(array: [teacher])
@@ -39,20 +37,12 @@ class ViewController: UIViewController {
         appDelegate.managedObjectContext!.save(nil)
 
         
-        let studentFetchRequest = NSFetchRequest(entityName: "Student")
-        if let studentFetchResults = appDelegate.managedObjectContext!.executeFetchRequest(studentFetchRequest, error: nil) as? [Student]
-        {
-            
-        }
-    
-        let teacherFetchRequest = NSFetchRequest(entityName: "Teacher")
-        if let teacherFetchResults = appDelegate.managedObjectContext!.executeFetchRequest(teacherFetchRequest, error: nil) as? [Teacher]
-        {
-            
-        }
+        let studentFetchRequest : NSFetchRequest = NSFetchRequest(entityName: "Student")
+        studentFetchRequest.sortDescriptors = [NSSortDescriptor(key: "studentName", ascending: false)]
+        let studentFetchResult = appDelegate.managedObjectContext?.executeFetchRequest(studentFetchRequest, error: nil)
+
         
-        
-    }
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

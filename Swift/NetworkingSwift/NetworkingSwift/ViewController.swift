@@ -16,17 +16,16 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://www.json-generator.com/api/json/get/ciGAlLjdaq?indent=2")!)
+        
         var session = NSURLSession.sharedSession()
-        var err: NSError?
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://www.json-generator.com/api/json/get/ciGAlLjdaq?indent=2")!)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
-        var task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
-      
-            var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
+        var task = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
+            
             var err: NSError?
-            var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as? NSDictionary
+            
+            var json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableLeaves, error: &err) as? NSDictionary
             
             if(err != nil)
             {
@@ -38,6 +37,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
                 if let parseJSON = json
                 {
                     self.drinksArray = parseJSON["drinks"] as! [AnyObject]
+                    
                     dispatch_async(dispatch_get_main_queue(),{ ()->() in
                         self.tableView.reloadData()
                     })
@@ -48,9 +48,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
                     println("Error could not parse JSON: \(jsonStr)")
                 }
             }
-
-        
-        });
+            
+    });
          task.resume()
     }
 
