@@ -59,14 +59,15 @@ class DataManager: NSObject
                     
                     let drinkFetchRequest = NSFetchRequest(entityName: "Drink")
                     
+                    var resultArray = (appDelegate.managedObjectContext!.executeFetchRequest(drinkFetchRequest, error: nil) as? [Drink])
+                    
                     if((error) != nil)
                     {
                         self.delegate.datafetchFailed(error)
                     }
                     else
                     {
-                        var drinksArray = (appDelegate.managedObjectContext!.executeFetchRequest(drinkFetchRequest, error: nil) as? [Drink])!
-                        self.delegate?.datafetchCompleted(drinksArray)
+                        self.delegate?.datafetchCompleted(resultArray!)
                     }
 
                 }

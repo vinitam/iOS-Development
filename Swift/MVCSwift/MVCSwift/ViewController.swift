@@ -16,7 +16,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        DataManager.fetchDrinksWithSuccess({ (result) -> Void in
+        
+        var dataManager = DataManager()
+        
+        dataManager.fetchDrinksWithSuccess({ (result) -> Void in
             
             self.drinksArray = result
             
@@ -24,18 +27,17 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 self.tableView.reloadData()
             })
             
-            }, failureHandler: { (failure) -> Void in
+        }, failureHandler: { (failure) -> Void in
             
-        });
+        })
+
     }
 
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
+
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return drinksArray.count
+        return self.drinksArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell

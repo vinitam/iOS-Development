@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F24E7FF61B03AA2700631352 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24E7FF51B03AA2700631352 /* Drink.swift */; };
 		F2B9C6FA1B01FFCE0044F806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B9C6F91B01FFCE0044F806 /* AppDelegate.swift */; };
 		F2B9C6FD1B01FFCE0044F806 /* NetworkWithCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2B9C6FB1B01FFCE0044F806 /* NetworkWithCoreData.xcdatamodeld */; };
 		F2B9C6FF1B01FFCE0044F806 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B9C6FE1B01FFCE0044F806 /* ViewController.swift */; };
@@ -14,7 +15,6 @@
 		F2B9C7041B01FFCE0044F806 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B9C7031B01FFCE0044F806 /* Images.xcassets */; };
 		F2B9C7071B01FFCE0044F806 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B9C7051B01FFCE0044F806 /* LaunchScreen.xib */; };
 		F2B9C7131B01FFCE0044F806 /* NetworkWithCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B9C7121B01FFCE0044F806 /* NetworkWithCoreDataTests.swift */; };
-		F2B9C7201B02003C0044F806 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B9C71F1B02003C0044F806 /* Drink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F24E7FF51B03AA2700631352 /* Drink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 		F2B9C6F41B01FFCE0044F806 /* NetworkWithCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkWithCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B9C6F81B01FFCE0044F806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2B9C6F91B01FFCE0044F806 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		F2B9C70C1B01FFCE0044F806 /* NetworkWithCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkWithCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B9C7111B01FFCE0044F806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2B9C7121B01FFCE0044F806 /* NetworkWithCoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWithCoreDataTests.swift; sourceTree = "<group>"; };
-		F2B9C71F1B02003C0044F806 /* Drink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 				F2B9C7031B01FFCE0044F806 /* Images.xcassets */,
 				F2B9C7051B01FFCE0044F806 /* LaunchScreen.xib */,
 				F2B9C6FB1B01FFCE0044F806 /* NetworkWithCoreData.xcdatamodeld */,
-				F2B9C71F1B02003C0044F806 /* Drink.swift */,
+				F24E7FF51B03AA2700631352 /* Drink.swift */,
 				F2B9C6F71B01FFCE0044F806 /* Supporting Files */,
 			);
 			path = NetworkWithCoreData;
@@ -220,7 +220,7 @@
 			files = (
 				F2B9C6FF1B01FFCE0044F806 /* ViewController.swift in Sources */,
 				F2B9C6FD1B01FFCE0044F806 /* NetworkWithCoreData.xcdatamodeld in Sources */,
-				F2B9C7201B02003C0044F806 /* Drink.swift in Sources */,
+				F24E7FF61B03AA2700631352 /* Drink.swift in Sources */,
 				F2B9C6FA1B01FFCE0044F806 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +420,7 @@
 				F2B9C7181B01FFCE0044F806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2B9C7191B01FFCE0044F806 /* Build configuration list for PBXNativeTarget "NetworkWithCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +429,7 @@
 				F2B9C71B1B01FFCE0044F806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -26,6 +26,12 @@ class ViewController: UIViewController {
 
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "dataFetchSuccessful", object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "dataFetchFailed", object: nil)
+
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -46,6 +52,7 @@ class ViewController: UIViewController {
     func dataFetchSuccessful(notification : NSNotification)
     {
         let userInfo:Dictionary<String,[Drink]> = notification.object as! Dictionary<String,[Drink]>
+        
         self.drinksArray = userInfo["drinks"]!
         
         dispatch_async(dispatch_get_main_queue(),{ ()->() in

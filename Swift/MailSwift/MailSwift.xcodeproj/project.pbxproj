@@ -14,6 +14,7 @@
 		F29C12061B024CA100F2E851 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F29C12051B024CA100F2E851 /* Images.xcassets */; };
 		F29C12091B024CA100F2E851 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29C12071B024CA100F2E851 /* LaunchScreen.xib */; };
 		F29C12151B024CA100F2E851 /* MailSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29C12141B024CA100F2E851 /* MailSwiftTests.swift */; };
+		F2A7BC571B05036700327021 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7BC561B05036700327021 /* SampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		F29C120E1B024CA100F2E851 /* MailSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29C12131B024CA100F2E851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F29C12141B024CA100F2E851 /* MailSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailSwiftTests.swift; sourceTree = "<group>"; };
+		F2A7BC561B05036700327021 /* SampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				F29C11FB1B024CA100F2E851 /* AppDelegate.swift */,
 				F29C12001B024CA100F2E851 /* ViewController.swift */,
+				F2A7BC561B05036700327021 /* SampleView.swift */,
 				F29C12021B024CA100F2E851 /* Main.storyboard */,
 				F29C12051B024CA100F2E851 /* Images.xcassets */,
 				F29C12071B024CA100F2E851 /* LaunchScreen.xib */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A7BC571B05036700327021 /* SampleView.swift in Sources */,
 				F29C12011B024CA100F2E851 /* ViewController.swift in Sources */,
 				F29C11FF1B024CA100F2E851 /* MailSwift.xcdatamodeld in Sources */,
 				F29C11FC1B024CA100F2E851 /* AppDelegate.swift in Sources */,
@@ -413,6 +417,7 @@
 				F29C121A1B024CA100F2E851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F29C121B1B024CA100F2E851 /* Build configuration list for PBXNativeTarget "MailSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				F29C121D1B024CA100F2E851 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

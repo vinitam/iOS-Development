@@ -11,6 +11,7 @@ import MessageUI
 
 class ViewController: UIViewController,MFMailComposeViewControllerDelegate {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,12 +21,12 @@ class ViewController: UIViewController,MFMailComposeViewControllerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     @IBAction func sendEmailButtonTapped(sender: AnyObject) {
         
         let mailComposeViewController = MFMailComposeViewController()
         mailComposeViewController.mailComposeDelegate = self
-        mailComposeViewController.setToRecipients(["recipient1@test.com"])
+        mailComposeViewController.setToRecipients(["recipient1@test.com","recipient2@test.com"])
         mailComposeViewController.setSubject("Subject")
         mailComposeViewController.setMessageBody("This is a sample mail", isHTML: false)
         
@@ -39,7 +40,7 @@ class ViewController: UIViewController,MFMailComposeViewControllerDelegate {
 
     
     func showSendMailErrorAlert() {
-        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
+        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: nil, cancelButtonTitle: "OK")
         sendMailErrorAlert.show()
     }
     

@@ -20,10 +20,13 @@ class ViewController: UIViewController,MFMessageComposeViewControllerDelegate {
         var messageVC = MFMessageComposeViewController()
         
         messageVC.body = "Enter a message";
-        messageVC.recipients = ["Enter a tel no"]
+        messageVC.recipients = ["8888888888"]
         messageVC.messageComposeDelegate = self;
         
-        self.presentViewController(messageVC, animated: false, completion: nil)
+        if MFMessageComposeViewController.canSendText()
+        {
+            self.presentViewController(messageVC, animated: false, completion: nil)
+        }
     }
     
     func messageComposeViewController(controller: MFMessageComposeViewController!, didFinishWithResult result: MessageComposeResult) {
@@ -36,7 +39,7 @@ class ViewController: UIViewController,MFMessageComposeViewControllerDelegate {
             self.dismissViewControllerAnimated(true, completion: nil)
         case MessageComposeResultSent.value:
             println("Message was sent")
-            self.dismissViewControllerAnimated(true, completion: nil)
+            controller.dismissViewControllerAnimated(true, completion: nil)
         default:
             break;
         }

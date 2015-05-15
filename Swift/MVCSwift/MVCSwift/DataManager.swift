@@ -14,7 +14,7 @@ class DataManager: NSObject
 {
     
     
-    class func fetchDrinksWithSuccess(successHandler:(result:[Drink]) -> Void,failureHandler:(failure:NSError) -> Void)
+    func fetchDrinksWithSuccess(successHandler:(result:[Drink]) -> Void,failureHandler:(failure:NSError) -> Void)
     {
         var url : NSURL = NSURL(string: "http://www.json-generator.com/api/json/get/ciGAlLjdaq?indent=2")!
         var request: NSURLRequest = NSURLRequest(URL: url)
@@ -23,7 +23,6 @@ class DataManager: NSObject
         
         let task : NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
             
-            var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
             var err: NSError?
             var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as? NSDictionary
             
@@ -53,13 +52,15 @@ class DataManager: NSObject
                     
                     let drinkFetchRequest = NSFetchRequest(entityName: "Drink")
                     
+                    var resultArray = (appDelegate.managedObjectContext!.executeFetchRequest(drinkFetchRequest, error: nil) as? [Drink])
+                    
                     if((error) != nil)
                     {
                         failureHandler(failure: error)
                     }
                     else
                     {
-                        successHandler(result:(appDelegate.managedObjectContext!.executeFetchRequest(drinkFetchRequest, error: nil) as? [Drink])!)
+                        successHandler(result:(resultArray!))
                     }
 
                 }

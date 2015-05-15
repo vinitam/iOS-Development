@@ -18,16 +18,15 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var request = NSMutableURLRequest(URL: NSURL(string: "http://www.json-generator.com/api/json/get/ciGAlLjdaq?indent=2")!)
         var session = NSURLSession.sharedSession()
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://www.json-generator.com/api/json/get/ciGAlLjdaq?indent=2")!)
         var err: NSError?
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         var task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
             
-            var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
             var err: NSError?
-            var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as? NSDictionary
+            var json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableLeaves, error: &err) as? NSDictionary
             
             if(err != nil)
             {
@@ -69,7 +68,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             }
             
             
-        });
+        })
         task.resume()
     }
     
@@ -82,7 +81,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     {
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         
-        var drink : Drink = self.drinksArray[indexPath.row]
+        var drink  = self.drinksArray[indexPath.row]
         
         cell.textLabel!.text = drink.name
         return cell

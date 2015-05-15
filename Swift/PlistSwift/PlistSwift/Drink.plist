@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>category</key>
+		<string>Cocktails</string>
+		<key>ingredients</key>
+		<string>\n1 oz cherry vodka\n3/4 oz bourbon whiskey\n1/2 oz Punt e Mes red vermouth\n1/2 oz triple sec\n1/2 oz lemon juice\n3 oz lemonade</string>
+		<key>name</key>
+		<string>Nathalie recipe</string>
+		<key>instructions</key>
+		<string>Shake liquors and lemon juice, and strain into an ice-filled wine goblet. Add lemonade, and serve.</string>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Cocktails</string>
+		<key>ingredients</key>
+		<string>\n1 1/2 oz Pimm&apos;s\u00ae gin\n Champagne\n lemon\n1 cucumber</string>
+		<key>name</key>
+		<string>Pimm&apos;s Royal recipe</string>
+		<key>instructions</key>
+		<string>Pour pimm&apos;s over ice in a large highball glass. Fill with champagne, garnish with lemon and cucumber peel.</string>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Cocktails</string>
+		<key>ingredients</key>
+		<string>\n1 oz vodka\n3/4 oz Chambord\u00ae raspberry liqueur\n1/2 oz lemon juice</string>
+		<key>name</key>
+		<string>French Horn recipe</string>
+		<key>instructions</key>
+		<string>Stir and strain into a cordial glass. Garnish with a speared cherry, and serve.</string>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Cocktails</string>
+		<key>ingredients</key>
+		<string>\n10 - 12 oz chocolate milk\n2 shots Kahlua\u00ae coffee liqueur\n2 shots Irish cream</string>
+		<key>name</key>
+		<string>Chocolate Buzz recipe</string>
+		<key>instructions</key>
+		<string>Pour chocolate milk into a large glass. Add 2 shots of kahlua and 2 shots of irish cream. Serve cold.</string>
+	</dict>
+	<dict>
+		<key>category</key>
+		<string>Ordinary Drink</string>
+		<key>ingredients</key>
+		<string>\n2 oz light or dark Rum\n6 oz Milk\n1 tsp Powdered sugar\n1 whole Egg\nNutmeg</string>
+		<key>name</key>
+		<string>Rum Eggnog</string>
+		<key>instructions</key>
+		<string>Shake all ingredients (except nutmeg) with ice and strain into a collins glass. Sprinkle nutmeg on top and serve.</string>
+	</dict>
+</array>
+</plist>
