@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="GestureSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agnes" translatesAutoresizingMaskIntoConstraints="NO" id="ZNu-xx-JV9">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="293" id="Drt-q9-ShO">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="230"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="257" id="q0a-El-mwd"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Drt-q9-ShO"/>
+                                        <exclude reference="q0a-El-mwd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Drt-q9-ShO"/>
+                                        <include reference="q0a-El-mwd"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Mng-Jh-io2" appends="YES" id="Zp8-H8-QlL"/>
+                                    <outletCollection property="gestureRecognizers" destination="C4J-Mi-YBn" appends="YES" id="cbc-WX-zaz"/>
+                                    <outletCollection property="gestureRecognizers" destination="U59-Rg-BKD" appends="YES" id="Trq-ey-KTG"/>
+                                    <outletCollection property="gestureRecognizers" destination="hlo-Mu-CpZ" appends="YES" id="H9f-qX-hkE"/>
+                                    <outletCollection property="gestureRecognizers" destination="WsQ-Th-YNQ" appends="YES" id="ErX-do-BqB"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOx-t1-l9o">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="UDY-x8-dze"/>
+                                    <constraint firstAttribute="height" constant="21" id="sFd-7a-Lct"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="UDY-x8-dze"/>
+                                        <exclude reference="sFd-7a-Lct"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="UDY-x8-dze"/>
+                                        <include reference="sFd-7a-Lct"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XOx-t1-l9o" firstAttribute="top" secondItem="ZNu-xx-JV9" secondAttribute="bottom" constant="19" id="5fF-Ir-Csh"/>
+                            <constraint firstAttribute="centerX" secondItem="ZNu-xx-JV9" secondAttribute="centerX" id="WFi-V1-GG9"/>
+                            <constraint firstAttribute="centerX" secondItem="XOx-t1-l9o" secondAttribute="centerX" id="d8U-dy-7bd"/>
+                            <constraint firstItem="ZNu-xx-JV9" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="111" id="i6n-fC-jMy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ZNu-xx-JV9"/>
+                                <exclude reference="XOx-t1-l9o"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="WFi-V1-GG9"/>
+                                <exclude reference="i6n-fC-jMy"/>
+                                <exclude reference="5fF-Ir-Csh"/>
+                                <exclude reference="d8U-dy-7bd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ZNu-xx-JV9"/>
+                                <include reference="XOx-t1-l9o"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="WFi-V1-GG9"/>
+                                <include reference="i6n-fC-jMy"/>
+                                <include reference="5fF-Ir-Csh"/>
+                                <include reference="d8U-dy-7bd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="XOx-t1-l9o" id="gvW-1s-Q6S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer cancelsTouchesInView="NO" id="Mng-Jh-io2">
+                    <connections>
+                        <action selector="pinchDetected:" destination="vXZ-lx-hvc" id="TjQ-u7-SWk"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="C4J-Mi-YBn">
+                    <connections>
+                        <action selector="tapRecogniser:" destination="vXZ-lx-hvc" id="ZpD-0L-rt9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <rotationGestureRecognizer rotation="180" id="U59-Rg-BKD">
+                    <connections>
+                        <action selector="rotationDetector:" destination="vXZ-lx-hvc" id="K1q-71-sa1"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <swipeGestureRecognizer cancelsTouchesInView="NO" direction="right" id="hlo-Mu-CpZ">
+                    <connections>
+                        <action selector="swipeDetected:" destination="vXZ-lx-hvc" id="ezI-jH-Ceg"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="WsQ-Th-YNQ">
+                    <connections>
+                        <action selector="longPressDetected:" destination="vXZ-lx-hvc" id="Zos-WD-cp5"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="agnes" width="1920" height="1080"/>
+    </resources>
+</document>
