@@ -43,6 +43,8 @@
                                     <outletCollection property="gestureRecognizers" destination="U59-Rg-BKD" appends="YES" id="Trq-ey-KTG"/>
                                     <outletCollection property="gestureRecognizers" destination="hlo-Mu-CpZ" appends="YES" id="H9f-qX-hkE"/>
                                     <outletCollection property="gestureRecognizers" destination="WsQ-Th-YNQ" appends="YES" id="ErX-do-BqB"/>
+                                    <outletCollection property="gestureRecognizers" destination="kN2-zG-M6p" appends="YES" id="cMl-5D-mCi"/>
+                                    <outletCollection property="gestureRecognizers" destination="72h-fS-iLq" appends="YES" id="c6i-xY-8Q7"/>
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOx-t1-l9o">
@@ -81,10 +83,10 @@
                                 <exclude reference="XOx-t1-l9o"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="WFi-V1-GG9"/>
-                                <exclude reference="i6n-fC-jMy"/>
                                 <exclude reference="5fF-Ir-Csh"/>
                                 <exclude reference="d8U-dy-7bd"/>
+                                <exclude reference="WFi-V1-GG9"/>
+                                <exclude reference="i6n-fC-jMy"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -93,10 +95,10 @@
                                 <include reference="XOx-t1-l9o"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="WFi-V1-GG9"/>
-                                <include reference="i6n-fC-jMy"/>
                                 <include reference="5fF-Ir-Csh"/>
                                 <include reference="d8U-dy-7bd"/>
+                                <include reference="WFi-V1-GG9"/>
+                                <include reference="i6n-fC-jMy"/>
                             </mask>
                         </variation>
                     </view>
@@ -107,15 +109,15 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <pinchGestureRecognizer cancelsTouchesInView="NO" id="Mng-Jh-io2">
                     <connections>
-                        <action selector="pinchDetected:" destination="vXZ-lx-hvc" id="TjQ-u7-SWk"/>
+                        <action selector="pinchDetected:" destination="vXZ-lx-hvc" id="1SQ-tm-eAY"/>
                     </connections>
                 </pinchGestureRecognizer>
-                <tapGestureRecognizer cancelsTouchesInView="NO" id="C4J-Mi-YBn">
+                <tapGestureRecognizer cancelsTouchesInView="NO" numberOfTapsRequired="2" numberOfTouchesRequired="2" id="C4J-Mi-YBn">
                     <connections>
                         <action selector="tapRecogniser:" destination="vXZ-lx-hvc" id="ZpD-0L-rt9"/>
                     </connections>
                 </tapGestureRecognizer>
-                <rotationGestureRecognizer rotation="180" id="U59-Rg-BKD">
+                <rotationGestureRecognizer cancelsTouchesInView="NO" id="U59-Rg-BKD">
                     <connections>
                         <action selector="rotationDetector:" destination="vXZ-lx-hvc" id="K1q-71-sa1"/>
                     </connections>
@@ -125,11 +127,22 @@
                         <action selector="swipeDetected:" destination="vXZ-lx-hvc" id="ezI-jH-Ceg"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="WsQ-Th-YNQ">
+                <pongPressGestureRecognizer cancelsTouchesInView="NO" allowableMovement="10" minimumPressDuration="0.5" id="WsQ-Th-YNQ">
                     <connections>
                         <action selector="longPressDetected:" destination="vXZ-lx-hvc" id="Zos-WD-cp5"/>
                     </connections>
                 </pongPressGestureRecognizer>
+                <screenEdgePanGestureRecognizer cancelsTouchesInView="NO" minimumNumberOfTouches="1" id="kN2-zG-M6p">
+                    <rectEdge key="edges" left="YES" top="YES" right="YES" bottom="YES"/>
+                    <connections>
+                        <action selector="panEdgeGesture:" destination="vXZ-lx-hvc" id="yHI-HX-Ox6"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
+                <panGestureRecognizer cancelsTouchesInView="NO" minimumNumberOfTouches="1" id="72h-fS-iLq">
+                    <connections>
+                        <action selector="panGestureDetected:" destination="vXZ-lx-hvc" id="j2W-a4-awT"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>

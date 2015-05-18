@@ -21,7 +21,7 @@
 		F2A7BC9D1B05B4AB00327021 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A7BC9A1B05B4AB00327021 /* FMDatabaseQueue.m */; };
 		F2A7BC9F1B05B4CB00327021 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7BC9E1B05B4CB00327021 /* Drink.swift */; };
 		F2A7BCA21B05B78B00327021 /* Datamanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7BCA11B05B78B00327021 /* Datamanager.swift */; };
-		F2A7BCA41B05B7A700327021 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A7BCA31B05B7A700327021 /* libsqlite3.0.dylib */; };
+		F2A7BDD71B064AFD00327021 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A7BCA31B05B7A700327021 /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A7BCA41B05B7A700327021 /* libsqlite3.0.dylib in Frameworks */,
+				F2A7BDD71B064AFD00327021 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +472,7 @@
 				F2A7BC821B0514A100327021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2A7BC831B0514A100327021 /* Build configuration list for PBXNativeTarget "SQLiteSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +481,7 @@
 				F2A7BC851B0514A100327021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController,UIGestureRecognizerDelegate {
 
     @IBOutlet weak var statusLabel: UILabel!
-    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +35,7 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
     
     @IBAction func tapRecogniser(sender: UITapGestureRecognizer)
     {
-        self.statusLabel.text = "Double Tap detected"
+        self.statusLabel.text = "Single Tap detected"
     }
     
     
@@ -45,12 +44,12 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
         let radians = sender.rotation
         let velocity = sender.velocity
         let outputString = "Rotation with velocity \(velocity) detected with a angle of:\(radians)"
-        statusLabel.text = outputString
+        self.statusLabel.text = outputString
     }
     
     @IBAction func swipeDetected(sender: UISwipeGestureRecognizer)
     {
-        self.statusLabel.text = "Right swipe detected"
+//        self.statusLabel.text = "Right swipe detected"
     }
     
     
@@ -65,6 +64,17 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
     
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
+    }
+    
+    @IBAction func panEdgeGesture(sender: UIScreenEdgePanGestureRecognizer) {
+        self.statusLabel.text = "Pan Edge detected"
+
+    }
+    
+    
+    @IBAction func panGestureDetected(sender: UIPanGestureRecognizer) {
+        self.statusLabel.text = "Pan detected"
+
     }
 }
 

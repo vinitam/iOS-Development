@@ -13,6 +13,7 @@
 		F2A7BBAA1B04EA8700327021 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A7BBA91B04EA8700327021 /* Images.xcassets */; };
 		F2A7BBAD1B04EA8700327021 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A7BBAB1B04EA8700327021 /* LaunchScreen.xib */; };
 		F2A7BBB91B04EA8700327021 /* FileManagementSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7BBB81B04EA8700327021 /* FileManagementSwiftTests.swift */; };
+		F2A7BDD91B07A9C300327021 /* FileListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7BDD81B07A9C300327021 /* FileListingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F2A7BBB21B04EA8700327021 /* FileManagementSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileManagementSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A7BBB71B04EA8700327021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2A7BBB81B04EA8700327021 /* FileManagementSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagementSwiftTests.swift; sourceTree = "<group>"; };
+		F2A7BDD81B07A9C300327021 /* FileListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				F2A7BBA21B04EA8700327021 /* AppDelegate.swift */,
 				F2A7BBA41B04EA8700327021 /* ViewController.swift */,
+				F2A7BDD81B07A9C300327021 /* FileListingViewController.swift */,
 				F2A7BBA61B04EA8700327021 /* Main.storyboard */,
 				F2A7BBA91B04EA8700327021 /* Images.xcassets */,
 				F2A7BBAB1B04EA8700327021 /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				F2A7BBA51B04EA8700327021 /* ViewController.swift in Sources */,
 				F2A7BBA31B04EA8700327021 /* AppDelegate.swift in Sources */,
+				F2A7BDD91B07A9C300327021 /* FileListingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				F2A7BBBE1B04EA8700327021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2A7BBBF1B04EA8700327021 /* Build configuration list for PBXNativeTarget "FileManagementSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				F2A7BBC11B04EA8700327021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

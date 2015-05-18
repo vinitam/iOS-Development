@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         print("touches began")
     }
@@ -32,9 +33,8 @@ class ViewController: UIViewController {
     
     override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         print("touches end")
-        let touchCount = touches.count
         let touch = touches.first as! UITouch
-        let point = touch.locationInView(self.colouredView)
+        let point = touch.locationInView(self.view)
         print("x: \(point.x), y: \(point.y)")
 
     }

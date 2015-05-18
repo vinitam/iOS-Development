@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I1i-wH-qeq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LJd-DZ-380">
+            <objects>
+                <navigationController id="I1i-wH-qeq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JGH-ra-5GH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="qfV-3T-b9r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xl5-CL-9ka" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-418.5" y="292.5"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FileManagementSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +31,161 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vh-Tc-J2m">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="gje-z7-Fy1"/>
+                                </constraints>
+                                <state key="normal" title="Create Folder">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="gje-z7-Fy1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="gje-z7-Fy1"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="CreateFileClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="N89-Iz-Img"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9k-O9-SMl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="5Zw-9K-LlQ"/>
+                                </constraints>
+                                <state key="normal" title="List files">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5Zw-9K-LlQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="5Zw-9K-LlQ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="ListFilesClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="b2W-ZW-mwi"/>
+                                    <segue destination="20J-ZS-rjH" kind="show" identifier="ListFiles" id="9Vd-Cx-FNU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i9k-O9-SMl" firstAttribute="top" secondItem="4vh-Tc-J2m" secondAttribute="bottom" constant="43" id="1sg-iB-6vP"/>
+                            <constraint firstAttribute="trailing" secondItem="4vh-Tc-J2m" secondAttribute="trailing" constant="35" id="JoK-2M-Qff"/>
+                            <constraint firstItem="4vh-Tc-J2m" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="36" id="SgK-hQ-Pq9"/>
+                            <constraint firstAttribute="trailing" secondItem="i9k-O9-SMl" secondAttribute="trailing" constant="35" id="TJK-xa-seV"/>
+                            <constraint firstItem="i9k-O9-SMl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="36" id="bty-9O-dEj"/>
+                            <constraint firstItem="4vh-Tc-J2m" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="64" id="qHW-uk-7RQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4vh-Tc-J2m"/>
+                                <exclude reference="i9k-O9-SMl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="JoK-2M-Qff"/>
+                                <exclude reference="SgK-hQ-Pq9"/>
+                                <exclude reference="qHW-uk-7RQ"/>
+                                <exclude reference="1sg-iB-6vP"/>
+                                <exclude reference="TJK-xa-seV"/>
+                                <exclude reference="bty-9O-dEj"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4vh-Tc-J2m"/>
+                                <include reference="i9k-O9-SMl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="JoK-2M-Qff"/>
+                                <include reference="SgK-hQ-Pq9"/>
+                                <include reference="qHW-uk-7RQ"/>
+                                <include reference="1sg-iB-6vP"/>
+                                <include reference="TJK-xa-seV"/>
+                                <include reference="bty-9O-dEj"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="WCu-9C-ScS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="256.5" y="292.5"/>
+        </scene>
+        <!--File Listing View Controller-->
+        <scene sceneID="pHU-Bk-jav">
+            <objects>
+                <viewController id="20J-ZS-rjH" customClass="FileListingViewController" customModule="FileManagementSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dKO-uv-xIK"/>
+                        <viewControllerLayoutGuide type="bottom" id="eOB-vf-69T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wZF-qb-C8N">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kTm-nE-VuH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="20J-ZS-rjH" id="tEO-Ir-JTY"/>
+                                    <outlet property="delegate" destination="20J-ZS-rjH" id="Ivn-9e-BdI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kTm-nE-VuH" firstAttribute="leading" secondItem="wZF-qb-C8N" secondAttribute="leading" id="4ca-IR-aGc"/>
+                            <constraint firstAttribute="trailing" secondItem="kTm-nE-VuH" secondAttribute="trailing" id="7Et-zT-sPW"/>
+                            <constraint firstItem="eOB-vf-69T" firstAttribute="top" secondItem="kTm-nE-VuH" secondAttribute="bottom" id="f0Y-4g-my5"/>
+                            <constraint firstItem="kTm-nE-VuH" firstAttribute="top" secondItem="wZF-qb-C8N" secondAttribute="top" id="p68-Sf-zoa">
+                                <variation key="heightClass=regular-widthClass=compact" constant="64"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="kTm-nE-VuH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="f0Y-4g-my5"/>
+                                <exclude reference="4ca-IR-aGc"/>
+                                <exclude reference="7Et-zT-sPW"/>
+                                <exclude reference="p68-Sf-zoa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="kTm-nE-VuH"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="f0Y-4g-my5"/>
+                                <include reference="4ca-IR-aGc"/>
+                                <include reference="7Et-zT-sPW"/>
+                                <include reference="p68-Sf-zoa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="kTm-nE-VuH" id="lkf-kB-iu1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h48-1g-AtX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918" y="290.25"/>
         </scene>
     </scenes>
 </document>

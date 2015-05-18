@@ -10,7 +10,6 @@ import UIKit
 
 class DatabaseOperation: NSObject {
    
-    var databasePath = NSString()
 
     
     class func initialiseDatabase()
@@ -82,12 +81,12 @@ class DatabaseOperation: NSObject {
         if drinkDB.open() {
             let querySQL = "SELECT * from DRINKS"
             
-            let results:FMResultSet? = drinkDB.executeQuery(querySQL,
+            let results: FMResultSet? = drinkDB.executeQuery(querySQL,
                 withArgumentsInArray: nil)
             
             while results?.next() == true {
                 var drink = Drink()
-                drink.name = results?.stringForColumn("name")
+                drink.name = results!.stringForColumn("name")
                 drink.category = results?.stringForColumn("category")
                 drink.ingredients = results?.stringForColumn("ingredients")
                 drink.instructions = results?.stringForColumn("instructions")

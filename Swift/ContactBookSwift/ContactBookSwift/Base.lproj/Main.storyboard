@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ContactBookSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="a4q-qQ-e8e">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="1ce-IN-rWT"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="hkN-vA-QLP"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cca-Kg-zd4">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="wwV-kH-oqd"/>
+                                    <constraint firstAttribute="height" constant="36" id="ybK-iV-TNa"/>
+                                </constraints>
+                                <state key="normal" title="Fetch Contacts">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="wwV-kH-oqd"/>
+                                        <exclude reference="ybK-iV-TNa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="wwV-kH-oqd"/>
+                                        <include reference="ybK-iV-TNa"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showAddressBook:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QKq-Rp-JAZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a4q-qQ-e8e" firstAttribute="top" secondItem="cca-Kg-zd4" secondAttribute="bottom" constant="29" id="6j6-Yy-gSg"/>
+                            <constraint firstAttribute="trailing" secondItem="a4q-qQ-e8e" secondAttribute="trailing" id="Fe5-kk-S3J"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="a4q-qQ-e8e" secondAttribute="bottom" id="NUg-0R-39P"/>
+                            <constraint firstItem="a4q-qQ-e8e" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="85" id="TOH-W7-J06"/>
+                            <constraint firstItem="cca-Kg-zd4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="gfV-EZ-9yo"/>
+                            <constraint firstItem="a4q-qQ-e8e" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="has-jO-bKq"/>
+                            <constraint firstAttribute="centerX" secondItem="cca-Kg-zd4" secondAttribute="centerX" id="iH4-aF-uJC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="a4q-qQ-e8e"/>
+                                <exclude reference="cca-Kg-zd4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6j6-Yy-gSg"/>
+                                <exclude reference="Fe5-kk-S3J"/>
+                                <exclude reference="TOH-W7-J06"/>
+                                <exclude reference="has-jO-bKq"/>
+                                <exclude reference="gfV-EZ-9yo"/>
+                                <exclude reference="iH4-aF-uJC"/>
+                                <exclude reference="NUg-0R-39P"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="a4q-qQ-e8e"/>
+                                <include reference="cca-Kg-zd4"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6j6-Yy-gSg"/>
+                                <include reference="Fe5-kk-S3J"/>
+                                <include reference="TOH-W7-J06"/>
+                                <include reference="has-jO-bKq"/>
+                                <include reference="gfV-EZ-9yo"/>
+                                <include reference="iH4-aF-uJC"/>
+                                <include reference="NUg-0R-39P"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="a4q-qQ-e8e" id="MyP-VJ-7nZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

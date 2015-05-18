@@ -17,7 +17,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var dataManager = DataManager()
         
         DataManager.fetchDrinksWithSuccess({ (result) -> Void in
             self.drinksArray = result

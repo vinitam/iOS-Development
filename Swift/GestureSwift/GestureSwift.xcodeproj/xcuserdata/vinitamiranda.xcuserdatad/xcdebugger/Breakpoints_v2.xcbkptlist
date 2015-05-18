@@ -10,12 +10,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GestureSwift/ViewController.swift"
-            timestampString = "453382560.670494"
+            timestampString = "453398514.451517"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "rotationDetector(_:)"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "panEdgeGesture(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GestureSwift/ViewController.swift"
+            timestampString = "453398583.445589"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "panGestureDetected(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

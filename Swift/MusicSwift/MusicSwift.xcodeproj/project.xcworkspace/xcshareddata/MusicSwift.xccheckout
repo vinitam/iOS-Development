@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D20DDD94-7AF5-459D-860A-BC164D853B7C</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>MusicSwift</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
 		<string>https://github.com/vinitam/iOS-Development.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Swift/MusicSwift/MusicSwift.xcodeproj/project.xcworkspace</string>
+	<string>Swift/MusicSwift/MusicSwift.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>

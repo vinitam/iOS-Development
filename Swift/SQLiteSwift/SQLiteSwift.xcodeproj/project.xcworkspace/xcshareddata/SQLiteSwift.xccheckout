@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C60CB4EE-9583-401A-9F1A-5162CA7E689B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SQLiteSwift</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
 		<string>https://github.com/vinitam/iOS-Development.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Swift/SQLiteSwift/SQLiteSwift.xcodeproj/project.xcworkspace</string>
+	<string>Swift/SQLiteSwift/SQLiteSwift.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
