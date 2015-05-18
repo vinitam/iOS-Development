@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="XMLParserSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Or1-h5-uhE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="woZ-fh-VQd"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="ixX-lO-px2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Or1-h5-uhE" secondAttribute="trailing" id="RCs-DG-mYw"/>
+                            <constraint firstItem="Or1-h5-uhE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="b9Q-i0-a0r"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Or1-h5-uhE" secondAttribute="bottom" id="k7k-wb-9Oz"/>
+                            <constraint firstItem="Or1-h5-uhE" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="uMT-ha-cuU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Or1-h5-uhE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="RCs-DG-mYw"/>
+                                <exclude reference="b9Q-i0-a0r"/>
+                                <exclude reference="uMT-ha-cuU"/>
+                                <exclude reference="k7k-wb-9Oz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Or1-h5-uhE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="RCs-DG-mYw"/>
+                                <include reference="b9Q-i0-a0r"/>
+                                <include reference="uMT-ha-cuU"/>
+                                <include reference="k7k-wb-9Oz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Or1-h5-uhE" id="FKe-4d-q1u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "orientationChanged:", name: UIDeviceOrientationDidChangeNotification, object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,8 +59,25 @@ class ViewController: UIViewController {
         {
             self.moviePlayer?.pause()
         }
-        
-        
     }
+    
+    func orientationChanged(notification :NSNotification)
+    {
+        self.adjustViewsForOrientation(UIApplication.sharedApplication().statusBarOrientation)
+    }
+    
+    func adjustViewsForOrientation(orientation : UIInterfaceOrientation)
+    {
+        
+        if (UIInterfaceOrientationIsPortrait(orientation))
+        {
+            self.moviePlayer?.setFullscreen(false, animated: true)
+        }
+        else if (UIInterfaceOrientationIsLandscape(orientation))
+        {
+            self.moviePlayer?.setFullscreen(true, animated: true)
+        }
+    }
+    
 }
 
