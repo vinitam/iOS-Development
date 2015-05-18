@@ -24,7 +24,8 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
 
     @IBAction func playAudio(sender: AnyObject) {
         
-            var drumSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("drum", ofType: "mp3")!)
+            var path =  NSBundle.mainBundle().pathForResource("drum", ofType: "mp3")
+            var drumSound = NSURL(fileURLWithPath: path!)
 
             var error:NSError?
             audioPlayer = AVAudioPlayer(contentsOfURL: drumSound, error: &error)
@@ -50,5 +51,9 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
 
     }
 
+    @IBAction func pauseAudio(sender: AnyObject)
+    {
+        audioPlayer.pause()
+    }
 }
 

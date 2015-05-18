@@ -12,6 +12,8 @@ import MediaPlayer
 class ViewController: UIViewController {
     var moviePlayer : MPMoviePlayerController?
 
+    @IBOutlet weak var playerView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,17 +25,42 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playVideo(sender: AnyObject) {
-        let path = NSBundle.mainBundle().pathForResource("lego", ofType:"mp4")
-        let url = NSURL.fileURLWithPath(path!)
-        moviePlayer = MPMoviePlayerController(contentURL: url)
-        if let player = moviePlayer {
-            player.view.frame = self.view.bounds
-            player.prepareToPlay()
-            player.scalingMode = .AspectFill
-            self.view.addSubview(player.view)
+        
+        if(self.moviePlayer?.playbackState == MPMoviePlaybackState.Paused)
+        {
+            self.moviePlayer?.play()
+        }
+        else
+        {
+            let path = NSBundle.mainBundle().pathForResource("lego", ofType:"mp4")
+            let url = NSURL.fileURLWithPath(path!)
+            self.moviePlayer = MPMoviePlayerController(contentURL: url)
+            if let player = self.moviePlayer
+            {
+                player.view.frame = CGRectMake(0, 0, self.playerView.frame.size.width, self.playerView.frame.size.height)
+                player.prepareToPlay()
+                player.scalingMode = .AspectFill
+                self.playerView.addSubview(player.view)
+            }
         }
         
     }
 
+    @IBAction func stopVideo(sender: AnyObject)
+    {
+        if(self.moviePlayer?.playbackState == MPMoviePlaybackState.Playing )
+        {
+            self.moviePlayer?.stop()
+        }
+    }
+    
+    @IBAction func pauseVideo(sender: AnyObject) {
+        if(self.moviePlayer?.playbackState == MPMoviePlaybackState.Playing )
+        {
+            self.moviePlayer?.pause()
+        }
+        
+        
+    }
 }
 

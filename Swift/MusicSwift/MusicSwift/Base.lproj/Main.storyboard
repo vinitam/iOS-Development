@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,11 +19,23 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f14-gr-9Qx">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pUn-Ky-YUn"/>
+                                </constraints>
                                 <state key="normal" title="Play Audio">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="141" width="201" height="30"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pUn-Ky-YUn"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="pUn-Ky-YUn"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <action selector="playAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AeT-i3-U0W"/>
@@ -30,28 +43,102 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC3-Qy-Rx7">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SGG-ym-w2n"/>
+                                </constraints>
                                 <state key="normal" title="Stop Audio">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="100" y="227" width="201" height="30"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SGG-ym-w2n"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="SGG-ym-w2n"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UZp-DW-ztY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMP-h5-SkQ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="29d-OT-ifa"/>
+                                    <constraint firstAttribute="height" constant="30" id="BC7-xg-n7e"/>
+                                </constraints>
+                                <state key="normal" title="Pause Audio">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="29d-OT-ifa"/>
+                                        <exclude reference="BC7-xg-n7e"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="29d-OT-ifa"/>
+                                        <include reference="BC7-xg-n7e"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="pauseAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nqT-0a-t9a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yC3-Qy-Rx7" secondAttribute="trailing" constant="99" id="0uE-ZJ-tQJ"/>
+                            <constraint firstAttribute="trailing" secondItem="f14-gr-9Qx" secondAttribute="trailing" constant="99" id="1bW-GY-iEv"/>
+                            <constraint firstItem="yC3-Qy-Rx7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="100" id="I4F-J3-5ze"/>
+                            <constraint firstItem="XMP-h5-SkQ" firstAttribute="top" secondItem="yC3-Qy-Rx7" secondAttribute="bottom" constant="52" id="NX0-lm-fJo"/>
+                            <constraint firstItem="f14-gr-9Qx" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="121" id="PRt-dy-RmE"/>
+                            <constraint firstItem="f14-gr-9Qx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="100" id="TCs-9G-fI6"/>
+                            <constraint firstItem="yC3-Qy-Rx7" firstAttribute="top" secondItem="f14-gr-9Qx" secondAttribute="bottom" constant="56" id="aHd-pg-VEh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XMP-h5-SkQ" secondAttribute="trailing" constant="83" id="hRv-c2-hy8"/>
+                            <constraint firstItem="XMP-h5-SkQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="84" id="j5x-Gs-51h"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="f14-gr-9Qx"/>
                                 <exclude reference="yC3-Qy-Rx7"/>
+                                <exclude reference="XMP-h5-SkQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1bW-GY-iEv"/>
+                                <exclude reference="PRt-dy-RmE"/>
+                                <exclude reference="TCs-9G-fI6"/>
+                                <exclude reference="0uE-ZJ-tQJ"/>
+                                <exclude reference="I4F-J3-5ze"/>
+                                <exclude reference="aHd-pg-VEh"/>
+                                <exclude reference="NX0-lm-fJo"/>
+                                <exclude reference="hRv-c2-hy8"/>
+                                <exclude reference="j5x-Gs-51h"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="f14-gr-9Qx"/>
                                 <include reference="yC3-Qy-Rx7"/>
+                                <include reference="XMP-h5-SkQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1bW-GY-iEv"/>
+                                <include reference="PRt-dy-RmE"/>
+                                <include reference="TCs-9G-fI6"/>
+                                <include reference="0uE-ZJ-tQJ"/>
+                                <include reference="I4F-J3-5ze"/>
+                                <include reference="aHd-pg-VEh"/>
+                                <include reference="NX0-lm-fJo"/>
+                                <include reference="hRv-c2-hy8"/>
+                                <include reference="j5x-Gs-51h"/>
                             </mask>
                         </variation>
                     </view>

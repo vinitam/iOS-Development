@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>94FBEE77-74FF-49E3-956B-2FCC509F6FA7</string>
+	<string>4162CD8A-12BD-44C7-A898-8A9B32603F5B</string>
 	<key>IDESourceControlProjectName</key>
-	<string>VideoPlayerSwift</string>
+	<string>XMLDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
 		<string>https://github.com/vinitam/iOS-Development.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Swift/VideoPlayerSwift/VideoPlayerSwift.xcodeproj</string>
+	<string>ObjectiveC/XMLDemo/XMLDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>

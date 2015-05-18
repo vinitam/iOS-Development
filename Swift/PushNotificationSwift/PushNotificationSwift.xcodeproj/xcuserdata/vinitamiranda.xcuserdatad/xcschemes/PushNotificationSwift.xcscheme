@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F2838E221B0A1D1D0073D363"
-               BuildableName = "MapSwift.app"
-               BlueprintName = "MapSwift"
-               ReferencedContainer = "container:MapSwift.xcodeproj">
+               BlueprintIdentifier = "F2838DF41B09E4CA0073D363"
+               BuildableName = "PushNotificationSwift.app"
+               BlueprintName = "PushNotificationSwift"
+               ReferencedContainer = "container:PushNotificationSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F2838E371B0A1D1D0073D363"
-               BuildableName = "MapSwiftTests.xctest"
-               BlueprintName = "MapSwiftTests"
-               ReferencedContainer = "container:MapSwift.xcodeproj">
+               BlueprintIdentifier = "F2838E091B09E4CA0073D363"
+               BuildableName = "PushNotificationSwiftTests.xctest"
+               BlueprintName = "PushNotificationSwiftTests"
+               ReferencedContainer = "container:PushNotificationSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F2838E371B0A1D1D0073D363"
-               BuildableName = "MapSwiftTests.xctest"
-               BlueprintName = "MapSwiftTests"
-               ReferencedContainer = "container:MapSwift.xcodeproj">
+               BlueprintIdentifier = "F2838E091B09E4CA0073D363"
+               BuildableName = "PushNotificationSwiftTests.xctest"
+               BlueprintName = "PushNotificationSwiftTests"
+               ReferencedContainer = "container:PushNotificationSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F2838E221B0A1D1D0073D363"
-            BuildableName = "MapSwift.app"
-            BlueprintName = "MapSwift"
-            ReferencedContainer = "container:MapSwift.xcodeproj">
+            BlueprintIdentifier = "F2838DF41B09E4CA0073D363"
+            BuildableName = "PushNotificationSwift.app"
+            BlueprintName = "PushNotificationSwift"
+            ReferencedContainer = "container:PushNotificationSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F2838E221B0A1D1D0073D363"
-            BuildableName = "MapSwift.app"
-            BlueprintName = "MapSwift"
-            ReferencedContainer = "container:MapSwift.xcodeproj">
+            BlueprintIdentifier = "F2838DF41B09E4CA0073D363"
+            BuildableName = "PushNotificationSwift.app"
+            BlueprintName = "PushNotificationSwift"
+            ReferencedContainer = "container:PushNotificationSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F2838E221B0A1D1D0073D363"
-            BuildableName = "MapSwift.app"
-            BlueprintName = "MapSwift"
-            ReferencedContainer = "container:MapSwift.xcodeproj">
+            BlueprintIdentifier = "F2838DF41B09E4CA0073D363"
+            BuildableName = "PushNotificationSwift.app"
+            BlueprintName = "PushNotificationSwift"
+            ReferencedContainer = "container:PushNotificationSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

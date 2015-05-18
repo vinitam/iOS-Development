@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MapSwift
+//  PushNotificationSwift
 //
 //  Created by Vinita Miranda on 5/18/15.
 //  Copyright (c) 2015 Vinita Miranda. All rights reserved.
@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        var type = UIUserNotificationType.Badge | UIUserNotificationType.Alert | UIUserNotificationType.Sound;
+        var setting = UIUserNotificationSettings(forTypes: type, categories: nil);
+        UIApplication.sharedApplication().registerUserNotificationSettings(setting);
+        UIApplication.sharedApplication().registerForRemoteNotifications();
+        
         return true
     }
 
@@ -41,6 +46,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        
+    }
 
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        
+    }
 }
 

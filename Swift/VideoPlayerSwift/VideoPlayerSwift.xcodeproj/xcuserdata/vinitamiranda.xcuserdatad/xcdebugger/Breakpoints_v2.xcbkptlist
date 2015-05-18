@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CameraSwift/ViewController.swift"
-            timestampString = "453657785.685402"
+            filePath = "VideoPlayerSwift/ViewController.swift"
+            timestampString = "453655245.343436"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "pauseVideo(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

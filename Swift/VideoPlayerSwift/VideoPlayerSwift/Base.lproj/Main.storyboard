@@ -40,34 +40,146 @@
                                     <action selector="playVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Yq-PZ-8LA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA6-d7-OF5">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="vhE-Cc-ekf"/>
+                                    <constraint firstAttribute="height" constant="50" id="xHt-Pq-uLq"/>
+                                </constraints>
+                                <state key="normal" title="Pause Video">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vhE-Cc-ekf"/>
+                                        <exclude reference="xHt-Pq-uLq"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="vhE-Cc-ekf"/>
+                                        <include reference="xHt-Pq-uLq"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="pauseVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JIJ-ci-aXo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HO0-dP-hcM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IeE-nW-xe9"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="Kez-ws-rLd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ng2-Hi-fQk"/>
+                                </constraints>
+                                <state key="normal" title="Stop Video">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IeE-nW-xe9"/>
+                                        <exclude reference="Kez-ws-rLd"/>
+                                        <exclude reference="ng2-Hi-fQk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="IeE-nW-xe9"/>
+                                        <include reference="Kez-ws-rLd"/>
+                                        <include reference="ng2-Hi-fQk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="stopVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4bs-kN-VcR"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BIW-i3-vix">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="253" id="iUS-2d-tiH"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iUS-2d-tiH"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="iUS-2d-tiH"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HO0-dP-hcM" secondAttribute="trailing" constant="44" id="3DZ-mc-P7f"/>
                             <constraint firstAttribute="trailing" secondItem="i0Y-AA-ZX0" secondAttribute="trailing" constant="44" id="3qD-Co-3BP"/>
+                            <constraint firstItem="BIW-i3-vix" firstAttribute="top" secondItem="HO0-dP-hcM" secondAttribute="bottom" constant="39" id="HEC-ze-CVK"/>
+                            <constraint firstItem="HO0-dP-hcM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="44" id="LJF-31-Vav"/>
+                            <constraint firstItem="BIW-i3-vix" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="OqG-cS-VSs"/>
+                            <constraint firstItem="HO0-dP-hcM" firstAttribute="top" secondItem="SA6-d7-OF5" secondAttribute="bottom" constant="40" id="UuY-iu-ZQv"/>
+                            <constraint firstAttribute="trailing" secondItem="SA6-d7-OF5" secondAttribute="trailing" constant="44" id="YAM-3g-lrg"/>
                             <constraint firstItem="i0Y-AA-ZX0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="44" id="fVl-Bz-oQG"/>
-                            <constraint firstItem="i0Y-AA-ZX0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="143" id="wV8-1P-fJy"/>
+                            <constraint firstItem="SA6-d7-OF5" firstAttribute="top" secondItem="i0Y-AA-ZX0" secondAttribute="bottom" constant="42" id="jjN-SC-RIq"/>
+                            <constraint firstItem="SA6-d7-OF5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="44" id="pFP-Ce-Xfa"/>
+                            <constraint firstItem="i0Y-AA-ZX0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="143" id="wV8-1P-fJy">
+                                <variation key="heightClass=regular-widthClass=compact" constant="35"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="BIW-i3-vix" secondAttribute="trailing" id="zRd-VH-3xU"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="i0Y-AA-ZX0"/>
+                                <exclude reference="SA6-d7-OF5"/>
+                                <exclude reference="HO0-dP-hcM"/>
+                                <exclude reference="BIW-i3-vix"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="3qD-Co-3BP"/>
                                 <exclude reference="fVl-Bz-oQG"/>
                                 <exclude reference="wV8-1P-fJy"/>
+                                <exclude reference="YAM-3g-lrg"/>
+                                <exclude reference="jjN-SC-RIq"/>
+                                <exclude reference="pFP-Ce-Xfa"/>
+                                <exclude reference="3DZ-mc-P7f"/>
+                                <exclude reference="LJF-31-Vav"/>
+                                <exclude reference="UuY-iu-ZQv"/>
+                                <exclude reference="HEC-ze-CVK"/>
+                                <exclude reference="OqG-cS-VSs"/>
+                                <exclude reference="zRd-VH-3xU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="i0Y-AA-ZX0"/>
+                                <include reference="SA6-d7-OF5"/>
+                                <include reference="HO0-dP-hcM"/>
+                                <include reference="BIW-i3-vix"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="3qD-Co-3BP"/>
                                 <include reference="fVl-Bz-oQG"/>
                                 <include reference="wV8-1P-fJy"/>
+                                <include reference="YAM-3g-lrg"/>
+                                <include reference="jjN-SC-RIq"/>
+                                <include reference="pFP-Ce-Xfa"/>
+                                <include reference="3DZ-mc-P7f"/>
+                                <include reference="LJF-31-Vav"/>
+                                <include reference="UuY-iu-ZQv"/>
+                                <include reference="HEC-ze-CVK"/>
+                                <include reference="OqG-cS-VSs"/>
+                                <include reference="zRd-VH-3xU"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="playerView" destination="BIW-i3-vix" id="S1u-EH-SNW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

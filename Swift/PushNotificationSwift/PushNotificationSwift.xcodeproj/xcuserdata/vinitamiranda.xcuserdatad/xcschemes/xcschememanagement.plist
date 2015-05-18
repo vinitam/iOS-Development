@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MapSwift.xcscheme</key>
+		<key>PushNotificationSwift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>F2838E221B0A1D1D0073D363</key>
+		<key>F2838DF41B09E4CA0073D363</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F2838E371B0A1D1D0073D363</key>
+		<key>F2838E091B09E4CA0073D363</key>
 		<dict>
 			<key>primary</key>
 			<true/>

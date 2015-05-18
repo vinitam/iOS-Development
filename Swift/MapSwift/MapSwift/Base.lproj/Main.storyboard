@@ -16,27 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jWZ-Ib-0p6">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3h8-NW-zix">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
-                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="H1C-aA-t9z"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3h8-NW-zix" secondAttribute="trailing" id="54J-wq-NJT"/>
+                            <constraint firstItem="3h8-NW-zix" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="QcA-SV-TR1"/>
+                            <constraint firstItem="3h8-NW-zix" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="dwW-60-tBL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="3h8-NW-zix" secondAttribute="bottom" id="wPe-ps-I4C"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="jWZ-Ib-0p6"/>
+                                <exclude reference="3h8-NW-zix"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="54J-wq-NJT"/>
+                                <exclude reference="QcA-SV-TR1"/>
+                                <exclude reference="dwW-60-tBL"/>
+                                <exclude reference="wPe-ps-I4C"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="jWZ-Ib-0p6"/>
+                                <include reference="3h8-NW-zix"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="54J-wq-NJT"/>
+                                <include reference="QcA-SV-TR1"/>
+                                <include reference="dwW-60-tBL"/>
+                                <include reference="wPe-ps-I4C"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="mapKit" destination="jWZ-Ib-0p6" id="yhG-az-uSr"/>
+                        <outlet property="mapView" destination="3h8-NW-zix" id="i2r-fR-HOS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

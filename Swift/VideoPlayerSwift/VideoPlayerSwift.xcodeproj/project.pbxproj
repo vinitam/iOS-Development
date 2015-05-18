@@ -413,6 +413,7 @@
 				F2838D0C1B07B6880073D363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2838D0D1B07B6880073D363 /* Build configuration list for PBXNativeTarget "VideoPlayerSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +422,7 @@
 				F2838D0F1B07B6880073D363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -24,7 +24,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePi
     @IBAction func pickFromGalleryClicked(sender: AnyObject) {
         self.imagePicker =  UIImagePickerController()
         self.imagePicker.delegate = self
-        self.imagePicker.sourceType = .PhotoLibrary
+        self.imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         presentViewController(self.imagePicker, animated: true, completion: nil)
     }
     
@@ -38,7 +38,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate, UIImagePi
             self.imagePicker =  UIImagePickerController()
             self.imagePicker.delegate = self
             self.imagePicker.sourceType = .Camera
-            presentViewController(self.imagePicker, animated: true, completion: nil)
+            presentViewController(self.imagePicker, animated: true, completion:nil)
         }
         else
         {

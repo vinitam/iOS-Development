@@ -7,46 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F2A7BB751B04E5B200327021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7BB741B04E5B200327021 /* AppDelegate.swift */; };
-		F2A7BB771B04E5B200327021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7BB761B04E5B200327021 /* ViewController.swift */; };
-		F2A7BB7A1B04E5B200327021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A7BB781B04E5B200327021 /* Main.storyboard */; };
-		F2A7BB7C1B04E5B200327021 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2A7BB7B1B04E5B200327021 /* Images.xcassets */; };
-		F2A7BB7F1B04E5B200327021 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A7BB7D1B04E5B200327021 /* LaunchScreen.xib */; };
-		F2A7BB8B1B04E5B200327021 /* MapSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A7BB8A1B04E5B200327021 /* MapSwiftTests.swift */; };
+		F2838E291B0A1D1D0073D363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2838E281B0A1D1D0073D363 /* AppDelegate.swift */; };
+		F2838E2B1B0A1D1D0073D363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2838E2A1B0A1D1D0073D363 /* ViewController.swift */; };
+		F2838E2E1B0A1D1D0073D363 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2838E2C1B0A1D1D0073D363 /* Main.storyboard */; };
+		F2838E301B0A1D1D0073D363 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2838E2F1B0A1D1D0073D363 /* Images.xcassets */; };
+		F2838E331B0A1D1D0073D363 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2838E311B0A1D1D0073D363 /* LaunchScreen.xib */; };
+		F2838E3F1B0A1D1D0073D363 /* MapSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2838E3E1B0A1D1D0073D363 /* MapSwiftTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F2A7BB851B04E5B200327021 /* PBXContainerItemProxy */ = {
+		F2838E391B0A1D1D0073D363 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F2A7BB671B04E5B200327021 /* Project object */;
+			containerPortal = F2838E1B1B0A1D1D0073D363 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F2A7BB6E1B04E5B200327021;
+			remoteGlobalIDString = F2838E221B0A1D1D0073D363;
 			remoteInfo = MapSwift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F2A7BB6F1B04E5B200327021 /* MapSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2A7BB731B04E5B200327021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2A7BB741B04E5B200327021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2A7BB761B04E5B200327021 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F2A7BB791B04E5B200327021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F2A7BB7B1B04E5B200327021 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F2A7BB7E1B04E5B200327021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F2A7BB841B04E5B200327021 /* MapSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2A7BB891B04E5B200327021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2A7BB8A1B04E5B200327021 /* MapSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSwiftTests.swift; sourceTree = "<group>"; };
+		F2838E231B0A1D1D0073D363 /* MapSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2838E271B0A1D1D0073D363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2838E281B0A1D1D0073D363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2838E2A1B0A1D1D0073D363 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2838E2D1B0A1D1D0073D363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2838E2F1B0A1D1D0073D363 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2838E321B0A1D1D0073D363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F2838E381B0A1D1D0073D363 /* MapSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2838E3D1B0A1D1D0073D363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2838E3E1B0A1D1D0073D363 /* MapSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSwiftTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F2A7BB6C1B04E5B200327021 /* Frameworks */ = {
+		F2838E201B0A1D1D0073D363 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2A7BB811B04E5B200327021 /* Frameworks */ = {
+		F2838E351B0A1D1D0073D363 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,58 +56,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F2A7BB661B04E5B200327021 = {
+		F2838E1A1B0A1D1D0073D363 = {
 			isa = PBXGroup;
 			children = (
-				F2A7BB711B04E5B200327021 /* MapSwift */,
-				F2A7BB871B04E5B200327021 /* MapSwiftTests */,
-				F2A7BB701B04E5B200327021 /* Products */,
+				F2838E251B0A1D1D0073D363 /* MapSwift */,
+				F2838E3B1B0A1D1D0073D363 /* MapSwiftTests */,
+				F2838E241B0A1D1D0073D363 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F2A7BB701B04E5B200327021 /* Products */ = {
+		F2838E241B0A1D1D0073D363 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F2A7BB6F1B04E5B200327021 /* MapSwift.app */,
-				F2A7BB841B04E5B200327021 /* MapSwiftTests.xctest */,
+				F2838E231B0A1D1D0073D363 /* MapSwift.app */,
+				F2838E381B0A1D1D0073D363 /* MapSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F2A7BB711B04E5B200327021 /* MapSwift */ = {
+		F2838E251B0A1D1D0073D363 /* MapSwift */ = {
 			isa = PBXGroup;
 			children = (
-				F2A7BB741B04E5B200327021 /* AppDelegate.swift */,
-				F2A7BB761B04E5B200327021 /* ViewController.swift */,
-				F2A7BB781B04E5B200327021 /* Main.storyboard */,
-				F2A7BB7B1B04E5B200327021 /* Images.xcassets */,
-				F2A7BB7D1B04E5B200327021 /* LaunchScreen.xib */,
-				F2A7BB721B04E5B200327021 /* Supporting Files */,
+				F2838E281B0A1D1D0073D363 /* AppDelegate.swift */,
+				F2838E2A1B0A1D1D0073D363 /* ViewController.swift */,
+				F2838E2C1B0A1D1D0073D363 /* Main.storyboard */,
+				F2838E2F1B0A1D1D0073D363 /* Images.xcassets */,
+				F2838E311B0A1D1D0073D363 /* LaunchScreen.xib */,
+				F2838E261B0A1D1D0073D363 /* Supporting Files */,
 			);
 			path = MapSwift;
 			sourceTree = "<group>";
 		};
-		F2A7BB721B04E5B200327021 /* Supporting Files */ = {
+		F2838E261B0A1D1D0073D363 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F2A7BB731B04E5B200327021 /* Info.plist */,
+				F2838E271B0A1D1D0073D363 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F2A7BB871B04E5B200327021 /* MapSwiftTests */ = {
+		F2838E3B1B0A1D1D0073D363 /* MapSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				F2A7BB8A1B04E5B200327021 /* MapSwiftTests.swift */,
-				F2A7BB881B04E5B200327021 /* Supporting Files */,
+				F2838E3E1B0A1D1D0073D363 /* MapSwiftTests.swift */,
+				F2838E3C1B0A1D1D0073D363 /* Supporting Files */,
 			);
 			path = MapSwiftTests;
 			sourceTree = "<group>";
 		};
-		F2A7BB881B04E5B200327021 /* Supporting Files */ = {
+		F2838E3C1B0A1D1D0073D363 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F2A7BB891B04E5B200327021 /* Info.plist */,
+				F2838E3D1B0A1D1D0073D363 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,13 +115,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F2A7BB6E1B04E5B200327021 /* MapSwift */ = {
+		F2838E221B0A1D1D0073D363 /* MapSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2A7BB8E1B04E5B300327021 /* Build configuration list for PBXNativeTarget "MapSwift" */;
+			buildConfigurationList = F2838E421B0A1D1D0073D363 /* Build configuration list for PBXNativeTarget "MapSwift" */;
 			buildPhases = (
-				F2A7BB6B1B04E5B200327021 /* Sources */,
-				F2A7BB6C1B04E5B200327021 /* Frameworks */,
-				F2A7BB6D1B04E5B200327021 /* Resources */,
+				F2838E1F1B0A1D1D0073D363 /* Sources */,
+				F2838E201B0A1D1D0073D363 /* Frameworks */,
+				F2838E211B0A1D1D0073D363 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -129,46 +129,46 @@
 			);
 			name = MapSwift;
 			productName = MapSwift;
-			productReference = F2A7BB6F1B04E5B200327021 /* MapSwift.app */;
+			productReference = F2838E231B0A1D1D0073D363 /* MapSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F2A7BB831B04E5B200327021 /* MapSwiftTests */ = {
+		F2838E371B0A1D1D0073D363 /* MapSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2A7BB911B04E5B300327021 /* Build configuration list for PBXNativeTarget "MapSwiftTests" */;
+			buildConfigurationList = F2838E451B0A1D1D0073D363 /* Build configuration list for PBXNativeTarget "MapSwiftTests" */;
 			buildPhases = (
-				F2A7BB801B04E5B200327021 /* Sources */,
-				F2A7BB811B04E5B200327021 /* Frameworks */,
-				F2A7BB821B04E5B200327021 /* Resources */,
+				F2838E341B0A1D1D0073D363 /* Sources */,
+				F2838E351B0A1D1D0073D363 /* Frameworks */,
+				F2838E361B0A1D1D0073D363 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F2A7BB861B04E5B200327021 /* PBXTargetDependency */,
+				F2838E3A1B0A1D1D0073D363 /* PBXTargetDependency */,
 			);
 			name = MapSwiftTests;
 			productName = MapSwiftTests;
-			productReference = F2A7BB841B04E5B200327021 /* MapSwiftTests.xctest */;
+			productReference = F2838E381B0A1D1D0073D363 /* MapSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F2A7BB671B04E5B200327021 /* Project object */ = {
+		F2838E1B1B0A1D1D0073D363 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Vinita Miranda";
 				TargetAttributes = {
-					F2A7BB6E1B04E5B200327021 = {
+					F2838E221B0A1D1D0073D363 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
-					F2A7BB831B04E5B200327021 = {
+					F2838E371B0A1D1D0073D363 = {
 						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = F2A7BB6E1B04E5B200327021;
+						TestTargetID = F2838E221B0A1D1D0073D363;
 					};
 				};
 			};
-			buildConfigurationList = F2A7BB6A1B04E5B200327021 /* Build configuration list for PBXProject "MapSwift" */;
+			buildConfigurationList = F2838E1E1B0A1D1D0073D363 /* Build configuration list for PBXProject "MapSwift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -176,29 +176,29 @@
 				en,
 				Base,
 			);
-			mainGroup = F2A7BB661B04E5B200327021;
-			productRefGroup = F2A7BB701B04E5B200327021 /* Products */;
+			mainGroup = F2838E1A1B0A1D1D0073D363;
+			productRefGroup = F2838E241B0A1D1D0073D363 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F2A7BB6E1B04E5B200327021 /* MapSwift */,
-				F2A7BB831B04E5B200327021 /* MapSwiftTests */,
+				F2838E221B0A1D1D0073D363 /* MapSwift */,
+				F2838E371B0A1D1D0073D363 /* MapSwiftTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F2A7BB6D1B04E5B200327021 /* Resources */ = {
+		F2838E211B0A1D1D0073D363 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A7BB7A1B04E5B200327021 /* Main.storyboard in Resources */,
-				F2A7BB7F1B04E5B200327021 /* LaunchScreen.xib in Resources */,
-				F2A7BB7C1B04E5B200327021 /* Images.xcassets in Resources */,
+				F2838E2E1B0A1D1D0073D363 /* Main.storyboard in Resources */,
+				F2838E331B0A1D1D0073D363 /* LaunchScreen.xib in Resources */,
+				F2838E301B0A1D1D0073D363 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2A7BB821B04E5B200327021 /* Resources */ = {
+		F2838E361B0A1D1D0073D363 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,46 +208,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F2A7BB6B1B04E5B200327021 /* Sources */ = {
+		F2838E1F1B0A1D1D0073D363 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A7BB771B04E5B200327021 /* ViewController.swift in Sources */,
-				F2A7BB751B04E5B200327021 /* AppDelegate.swift in Sources */,
+				F2838E2B1B0A1D1D0073D363 /* ViewController.swift in Sources */,
+				F2838E291B0A1D1D0073D363 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2A7BB801B04E5B200327021 /* Sources */ = {
+		F2838E341B0A1D1D0073D363 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A7BB8B1B04E5B200327021 /* MapSwiftTests.swift in Sources */,
+				F2838E3F1B0A1D1D0073D363 /* MapSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F2A7BB861B04E5B200327021 /* PBXTargetDependency */ = {
+		F2838E3A1B0A1D1D0073D363 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F2A7BB6E1B04E5B200327021 /* MapSwift */;
-			targetProxy = F2A7BB851B04E5B200327021 /* PBXContainerItemProxy */;
+			target = F2838E221B0A1D1D0073D363 /* MapSwift */;
+			targetProxy = F2838E391B0A1D1D0073D363 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F2A7BB781B04E5B200327021 /* Main.storyboard */ = {
+		F2838E2C1B0A1D1D0073D363 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F2A7BB791B04E5B200327021 /* Base */,
+				F2838E2D1B0A1D1D0073D363 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F2A7BB7D1B04E5B200327021 /* LaunchScreen.xib */ = {
+		F2838E311B0A1D1D0073D363 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F2A7BB7E1B04E5B200327021 /* Base */,
+				F2838E321B0A1D1D0073D363 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F2A7BB8C1B04E5B200327021 /* Debug */ = {
+		F2838E401B0A1D1D0073D363 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -299,7 +299,7 @@
 			};
 			name = Debug;
 		};
-		F2A7BB8D1B04E5B200327021 /* Release */ = {
+		F2838E411B0A1D1D0073D363 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -336,7 +336,7 @@
 			};
 			name = Release;
 		};
-		F2A7BB8F1B04E5B300327021 /* Debug */ = {
+		F2838E431B0A1D1D0073D363 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -346,7 +346,7 @@
 			};
 			name = Debug;
 		};
-		F2A7BB901B04E5B300327021 /* Release */ = {
+		F2838E441B0A1D1D0073D363 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -356,7 +356,7 @@
 			};
 			name = Release;
 		};
-		F2A7BB921B04E5B300327021 /* Debug */ = {
+		F2838E461B0A1D1D0073D363 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -375,7 +375,7 @@
 			};
 			name = Debug;
 		};
-		F2A7BB931B04E5B300327021 /* Release */ = {
+		F2838E471B0A1D1D0073D363 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -393,32 +393,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F2A7BB6A1B04E5B200327021 /* Build configuration list for PBXProject "MapSwift" */ = {
+		F2838E1E1B0A1D1D0073D363 /* Build configuration list for PBXProject "MapSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F2A7BB8C1B04E5B200327021 /* Debug */,
-				F2A7BB8D1B04E5B200327021 /* Release */,
+				F2838E401B0A1D1D0073D363 /* Debug */,
+				F2838E411B0A1D1D0073D363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2A7BB8E1B04E5B300327021 /* Build configuration list for PBXNativeTarget "MapSwift" */ = {
+		F2838E421B0A1D1D0073D363 /* Build configuration list for PBXNativeTarget "MapSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F2A7BB8F1B04E5B300327021 /* Debug */,
-				F2A7BB901B04E5B300327021 /* Release */,
+				F2838E431B0A1D1D0073D363 /* Debug */,
+				F2838E441B0A1D1D0073D363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		F2A7BB911B04E5B300327021 /* Build configuration list for PBXNativeTarget "MapSwiftTests" */ = {
+		F2838E451B0A1D1D0073D363 /* Build configuration list for PBXNativeTarget "MapSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F2A7BB921B04E5B300327021 /* Debug */,
-				F2A7BB931B04E5B300327021 /* Release */,
+				F2838E461B0A1D1D0073D363 /* Debug */,
+				F2838E471B0A1D1D0073D363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F2A7BB671B04E5B200327021 /* Project object */;
+	rootObject = F2838E1B1B0A1D1D0073D363 /* Project object */;
 }
