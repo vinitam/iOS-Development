@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
-        var nextBadgeNumber = UIApplication.sharedApplication().scheduledLocalNotifications.count + 1
+        var nextBadgeNumber = application.scheduledLocalNotifications.count + 1
         notification.applicationIconBadgeNumber = nextBadgeNumber;
     }
 

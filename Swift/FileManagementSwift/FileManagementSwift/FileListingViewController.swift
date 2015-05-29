@@ -26,8 +26,7 @@ class FileListingViewController: UIViewController,UITableViewDelegate,UITableVie
         NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask, true)
         let docsDir = dirPaths[0] as! String
         
-        var error: NSError?
-        self.filesArray =  filemgr.contentsOfDirectoryAtPath(docsDir, error: &error) as? [String]
+        self.filesArray =  filemgr.contentsOfDirectoryAtPath(docsDir, error: nil) as? [String]
         self.tableView.reloadData()
 
     }

@@ -18,7 +18,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
         var parser : DataManager = DataManager() as DataManager
         parser.delegate = self
-        parser.xmlParser(self)
+        parser.startXmlParsing()
     
     }
 

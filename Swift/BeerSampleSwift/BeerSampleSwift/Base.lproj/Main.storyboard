@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wl6-rr-7SM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="xYB-ey-YAr">
+            <objects>
+                <navigationController id="wl6-rr-7SM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="acv-he-QPX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="nop-UQ-rHp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sbf-pe-1mM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460.5" y="240"/>
+        </scene>
+        <!--Beer View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="BeerViewController" customModule="BeerSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="X6H-5k-ONw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="sGN-fv-Gmk"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="zZA-Qj-HPj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="X6H-5k-ONw" secondAttribute="bottom" id="AkT-tE-lgO"/>
+                            <constraint firstItem="X6H-5k-ONw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="REY-mI-296"/>
+                            <constraint firstItem="X6H-5k-ONw" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="irM-Pn-aJe"/>
+                            <constraint firstAttribute="trailing" secondItem="X6H-5k-ONw" secondAttribute="trailing" id="xmN-Cc-FpM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="X6H-5k-ONw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="AkT-tE-lgO"/>
+                                <exclude reference="REY-mI-296"/>
+                                <exclude reference="irM-Pn-aJe"/>
+                                <exclude reference="xmN-Cc-FpM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="X6H-5k-ONw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="AkT-tE-lgO"/>
+                                <include reference="REY-mI-296"/>
+                                <include reference="irM-Pn-aJe"/>
+                                <include reference="xmN-Cc-FpM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="MwG-06-SHH"/>
+                    <connections>
+                        <outlet property="tableView" destination="X6H-5k-ONw" id="5Tb-ew-l9m"/>
+                        <segue destination="J9O-m3-Q0o" kind="show" identifier="" id="mQw-aW-eXl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="236.25"/>
+        </scene>
+        <!--Product View Controller-->
+        <scene sceneID="f3j-N3-oGJ">
+            <objects>
+                <viewController storyboardIdentifier="ProductViewController" id="J9O-m3-Q0o" customClass="ProductViewController" customModule="BeerSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C48-r9-Afk"/>
+                        <viewControllerLayoutGuide type="bottom" id="lKT-ES-G1l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v6P-uJ-UkR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yKY-b6-ynP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="J9O-m3-Q0o" id="iVU-b6-r70"/>
+                                    <outlet property="delegate" destination="J9O-m3-Q0o" id="XeM-L2-jNx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yKY-b6-ynP" firstAttribute="leading" secondItem="v6P-uJ-UkR" secondAttribute="leading" id="ATH-yu-in6"/>
+                            <constraint firstAttribute="trailing" secondItem="yKY-b6-ynP" secondAttribute="trailing" id="Adp-9a-KU6"/>
+                            <constraint firstItem="lKT-ES-G1l" firstAttribute="top" secondItem="yKY-b6-ynP" secondAttribute="bottom" constant="8" id="QNV-L0-hyl">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="yKY-b6-ynP" firstAttribute="top" secondItem="v6P-uJ-UkR" secondAttribute="top" constant="8" id="fyj-j8-xrZ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="yKY-b6-ynP"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="QNV-L0-hyl"/>
+                                <exclude reference="ATH-yu-in6"/>
+                                <exclude reference="Adp-9a-KU6"/>
+                                <exclude reference="fyj-j8-xrZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="yKY-b6-ynP"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="QNV-L0-hyl"/>
+                                <include reference="ATH-yu-in6"/>
+                                <include reference="Adp-9a-KU6"/>
+                                <include reference="fyj-j8-xrZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="yKY-b6-ynP" id="ikW-BN-CaZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJz-c3-rub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940.5" y="240"/>
+        </scene>
+        <!--Store View Controller-->
+        <scene sceneID="TJB-Jh-oOj">
+            <objects>
+                <viewController storyboardIdentifier="StoreViewController" id="WXH-dV-17q" customClass="StoreViewController" customModule="BeerSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sI8-au-cRn"/>
+                        <viewControllerLayoutGuide type="bottom" id="tcf-Bo-PWM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vOH-80-DCj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Ly2-oZ-zDt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WXH-dV-17q" id="xY4-Y0-lVE"/>
+                                    <outlet property="delegate" destination="WXH-dV-17q" id="a0x-NZ-nRe"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ly2-oZ-zDt" secondAttribute="trailing" id="0Zu-c7-31j"/>
+                            <constraint firstItem="Ly2-oZ-zDt" firstAttribute="top" secondItem="vOH-80-DCj" secondAttribute="top" id="HuJ-St-l4N"/>
+                            <constraint firstItem="Ly2-oZ-zDt" firstAttribute="leading" secondItem="vOH-80-DCj" secondAttribute="leading" id="oD7-R1-kFV"/>
+                            <constraint firstItem="tcf-Bo-PWM" firstAttribute="top" secondItem="Ly2-oZ-zDt" secondAttribute="bottom" id="zJl-a2-zMW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Ly2-oZ-zDt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="zJl-a2-zMW"/>
+                                <exclude reference="0Zu-c7-31j"/>
+                                <exclude reference="HuJ-St-l4N"/>
+                                <exclude reference="oD7-R1-kFV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Ly2-oZ-zDt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="zJl-a2-zMW"/>
+                                <include reference="0Zu-c7-31j"/>
+                                <include reference="HuJ-St-l4N"/>
+                                <include reference="oD7-R1-kFV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Ly2-oZ-zDt" id="MHz-Di-GSW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ssu-hN-iAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1614" y="240"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="n0v-5B-QOO">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="Hgo-m1-wEk" customClass="MapViewController" customModule="BeerSampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Nd-lA-hmr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oax-S6-b0R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YzG-RB-7TV">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9Nr-p8-hvm">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Nr-p8-hvm" firstAttribute="leading" secondItem="YzG-RB-7TV" secondAttribute="leading" id="8UZ-6u-8ed"/>
+                            <constraint firstItem="9Nr-p8-hvm" firstAttribute="top" secondItem="YzG-RB-7TV" secondAttribute="top" id="cst-F6-s0U"/>
+                            <constraint firstAttribute="trailing" secondItem="9Nr-p8-hvm" secondAttribute="trailing" id="oP1-q2-RgA"/>
+                            <constraint firstItem="Oax-S6-b0R" firstAttribute="top" secondItem="9Nr-p8-hvm" secondAttribute="bottom" id="t2e-nV-IEd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9Nr-p8-hvm"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8UZ-6u-8ed"/>
+                                <exclude reference="cst-F6-s0U"/>
+                                <exclude reference="oP1-q2-RgA"/>
+                                <exclude reference="t2e-nV-IEd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9Nr-p8-hvm"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8UZ-6u-8ed"/>
+                                <include reference="cst-F6-s0U"/>
+                                <include reference="oP1-q2-RgA"/>
+                                <include reference="t2e-nV-IEd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="9Nr-p8-hvm" id="9vr-9P-ree"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMN-FC-YNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2290.5" y="240"/>
+        </scene>
+    </scenes>
+</document>

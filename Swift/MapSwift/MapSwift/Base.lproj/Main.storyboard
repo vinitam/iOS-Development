@@ -35,10 +35,10 @@
                                 <exclude reference="3h8-NW-zix"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="wPe-ps-I4C"/>
                                 <exclude reference="54J-wq-NJT"/>
                                 <exclude reference="QcA-SV-TR1"/>
                                 <exclude reference="dwW-60-tBL"/>
-                                <exclude reference="wPe-ps-I4C"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -46,10 +46,10 @@
                                 <include reference="3h8-NW-zix"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="wPe-ps-I4C"/>
                                 <include reference="54J-wq-NJT"/>
                                 <include reference="QcA-SV-TR1"/>
                                 <include reference="dwW-60-tBL"/>
-                                <include reference="wPe-ps-I4C"/>
                             </mask>
                         </variation>
                     </view>

@@ -68,13 +68,13 @@
                                 <exclude reference="cca-Kg-zd4"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="NUg-0R-39P"/>
+                                <exclude reference="gfV-EZ-9yo"/>
+                                <exclude reference="iH4-aF-uJC"/>
                                 <exclude reference="6j6-Yy-gSg"/>
                                 <exclude reference="Fe5-kk-S3J"/>
                                 <exclude reference="TOH-W7-J06"/>
                                 <exclude reference="has-jO-bKq"/>
-                                <exclude reference="gfV-EZ-9yo"/>
-                                <exclude reference="iH4-aF-uJC"/>
-                                <exclude reference="NUg-0R-39P"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -83,13 +83,13 @@
                                 <include reference="cca-Kg-zd4"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="NUg-0R-39P"/>
+                                <include reference="gfV-EZ-9yo"/>
+                                <include reference="iH4-aF-uJC"/>
                                 <include reference="6j6-Yy-gSg"/>
                                 <include reference="Fe5-kk-S3J"/>
                                 <include reference="TOH-W7-J06"/>
                                 <include reference="has-jO-bKq"/>
-                                <include reference="gfV-EZ-9yo"/>
-                                <include reference="iH4-aF-uJC"/>
-                                <include reference="NUg-0R-39P"/>
                             </mask>
                         </variation>
                     </view>

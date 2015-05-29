@@ -39,7 +39,10 @@ class ViewController: UIViewController {
             self.addressBook = nil
             return false
         }
-        self.addressBook = addressBook
+        else
+        {
+            self.addressBook = addressBook
+        }
         return true
     }
 
@@ -47,7 +50,8 @@ class ViewController: UIViewController {
     func getStatus() -> Bool
     {
         let status = ABAddressBookGetAuthorizationStatus()
-        switch status {
+        switch status
+        {
         case .Authorized:
             return self.createAddressBook()
         case .NotDetermined:
@@ -57,18 +61,6 @@ class ViewController: UIViewController {
                 dispatch_async(dispatch_get_main_queue()) {
                     if granted
                     {
-                        if self.addressBook != nil {
-                            currentStatus = true
-                        }
-                        var error : Unmanaged<CFError>? = nil
-                        let addressBook : ABAddressBook? = ABAddressBookCreateWithOptions(nil, &error).takeRetainedValue()
-                        if addressBook == nil
-                        {
-                            println(error)
-                            self.addressBook = nil
-                            currentStatus = false
-                        }
-                        self.addressBook = addressBook
                         currentStatus = true
                     }
                 }
@@ -94,13 +86,15 @@ class ViewController: UIViewController {
         self.tableView.reloadData()
     }
     
-    func getContactNames() {
+    func getContactNames()
+    {
         if !self.getStatus()
         {
             return
         }
-        let people = ABAddressBookCopyArrayOfAllPeople(addressBook).takeRetainedValue() as NSArray as [ABRecord]
+        let people = ABAddressBookCopyArrayOfAllPeople(self.addressBook).takeRetainedValue() as [ABRecord]
         self.contactsArray = people
+        self.tableView.reloadData() 
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -112,7 +106,7 @@ class ViewController: UIViewController {
     {
         var cell : UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         
-        var contact: ABRecordRef = contactsArray[indexPath.row] as ABRecordRef
+        var contact: ABRecord = contactsArray[indexPath.row] as ABRecord
         var contactName: String = ABRecordCopyCompositeName(contact).takeRetainedValue() as String
         cell.textLabel!.text = contactName
         return cell

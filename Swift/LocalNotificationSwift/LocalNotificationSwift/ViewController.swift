@@ -24,9 +24,9 @@ class ViewController: UIViewController {
     @IBAction func sendNotification(sender: UIButton)
     {
         var localNotification:UILocalNotification = UILocalNotification()
-        localNotification.alertAction = "Testing notifications on iOS8"
-        localNotification.alertBody = "Woww it works!!"
-        localNotification.fireDate = NSDate(timeIntervalSinceNow: 1)
+        localNotification.alertAction = "Notification test"
+        localNotification.alertBody = "This is your first notification !!!!"
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
         localNotification.applicationIconBadgeNumber = 1;
 
         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)

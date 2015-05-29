@@ -14,9 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let goodMorning = "Hello".localizedWithComment("Greet")
 
-        self.greetLabel.text = goodMorning
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,9 +25,3 @@ class ViewController: UIViewController {
 
 }
 
-extension String {
-    func localizedWithComment(comment:String) -> String
-    {
-        return NSLocalizedString(self, tableName: nil, bundle: NSBundle.mainBundle(), value: "", comment: comment)
-    }
-}

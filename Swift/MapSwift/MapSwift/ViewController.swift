@@ -29,20 +29,16 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         }
         
         
-        var latDelta:CLLocationDegrees = 1
+
         
-        var longDelta:CLLocationDegrees = 1
-        
-        var theSpan:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
-        var pointLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(19.0728300,72.8826100
-)
-        
+        var theSpan:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
+        var pointLocation:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 19.0728300, longitude: 72.8826100)
         var region:MKCoordinateRegion = MKCoordinateRegionMake(pointLocation, theSpan)
         mapView.setRegion(region, animated: true)
         
-        var pinLocation : CLLocationCoordinate2D = CLLocationCoordinate2DMake(19.0728300,72.8826100)
+        
         var objectAnnotation = MKPointAnnotation()
-        objectAnnotation.coordinate = pinLocation
+        objectAnnotation.coordinate = pointLocation
         objectAnnotation.title = "Mumbai"
         self.mapView.addAnnotation(objectAnnotation)
         
@@ -51,14 +47,18 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         objectAnnotation.coordinate = pinLocation1
         objectAnnotation.title = "Andheri"
         self.mapView.addAnnotation(objectAnnotation)
-        self.mapView.showsUserLocation = true
     }
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         let location = locations.last as! CLLocation
-        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
-        self.mapView.setRegion(region, animated: true)
+        let currentLocation = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        var objectAnnotation = MKPointAnnotation()
+        objectAnnotation.coordinate = currentLocation
+        objectAnnotation.title = "Updated Location"
+        self.mapView.addAnnotation(objectAnnotation)
+
+        
+
     }
 
     override func didReceiveMemoryWarning() {

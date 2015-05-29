@@ -23,19 +23,29 @@ class DataManager: NSObject, NSXMLParserDelegate
     var drinks : Drinks!
     var delegate : DataManagerProtocol!
     
-    func xmlParser(delegate : AnyObject) -> DataManager
+    func startXmlParsing()
     {
         
         self.parser = NSXMLParser(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("drinks", ofType: "xml")!))!
         self.parser.delegate = self
         self.parser.parse()
-        
-        return self;
     }
     
     func parserDidStartDocument(parser: NSXMLParser) {
         self.arrayOfObjects = []
         
+    }
+    
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject])
+    {
+        self.currentElement = elementName;
+        var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        
+        if (self.currentElement == "element")
+        {
+            self.drinks = NSEntityDescription.insertNewObjectForEntityForName("Drinks", inManagedObjectContext: appDelegate.managedObjectContext!) as! Drinks;
+        }
     }
     
     func parser(parser: NSXMLParser, foundCharacters string: String?)
@@ -61,16 +71,6 @@ class DataManager: NSObject, NSXMLParserDelegate
         }
     }
     
-    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject])
-    {
-        self.currentElement = elementName;
-        var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        
-        if (self.currentElement == "element")
-        {
-            self.drinks = NSEntityDescription.insertNewObjectForEntityForName("Drinks", inManagedObjectContext: appDelegate.managedObjectContext!) as! Drinks;
-        }
-    }
     
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?)
     {
