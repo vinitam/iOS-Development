@@ -14,7 +14,8 @@
 		F228F5CE1B7741480026C450 /* SplitViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F228F5CD1B7741480026C450 /* SplitViewDemoTests.m */; };
 		F228F5DC1B77415F0026C450 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F228F5D81B77415F0026C450 /* ViewController.m */; };
 		F228F5DD1B77415F0026C450 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F228F5DA1B77415F0026C450 /* MenuTableViewController.m */; };
-		F228F5DE1B77415F0026C450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F228F5DB1B77415F0026C450 /* Main.storyboard */; };
+		F228F6181B77473B0026C450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F228F6171B77473B0026C450 /* Main.storyboard */; };
+		F228F61B1B7747600026C450 /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F228F6191B77475F0026C450 /* PopoverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,9 @@
 		F228F5D81B77415F0026C450 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F228F5D91B77415F0026C450 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		F228F5DA1B77415F0026C450 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
-		F228F5DB1B77415F0026C450 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F228F6171B77473B0026C450 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F228F6191B77475F0026C450 /* PopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewController.m; sourceTree = "<group>"; };
+		F228F61A1B7747600026C450 /* PopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +94,10 @@
 				F228F5D81B77415F0026C450 /* ViewController.m */,
 				F228F5D91B77415F0026C450 /* MenuTableViewController.h */,
 				F228F5DA1B77415F0026C450 /* MenuTableViewController.m */,
-				F228F5DB1B77415F0026C450 /* Main.storyboard */,
 				F228F5C01B7741480026C450 /* LaunchScreen.xib */,
+				F228F6191B77475F0026C450 /* PopoverViewController.m */,
+				F228F61A1B7747600026C450 /* PopoverViewController.h */,
+				F228F6171B77473B0026C450 /* Main.storyboard */,
 				F228F5B11B7741480026C450 /* Supporting Files */,
 			);
 			path = SplitViewDemo;
@@ -204,7 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F228F5DE1B77415F0026C450 /* Main.storyboard in Resources */,
+				F228F6181B77473B0026C450 /* Main.storyboard in Resources */,
 				F228F5C21B7741480026C450 /* LaunchScreen.xib in Resources */,
 				F228F5BF1B7741480026C450 /* Images.xcassets in Resources */,
 			);
@@ -227,6 +232,7 @@
 				F228F5DD1B77415F0026C450 /* MenuTableViewController.m in Sources */,
 				F228F5DC1B77415F0026C450 /* ViewController.m in Sources */,
 				F228F5B71B7741480026C450 /* AppDelegate.m in Sources */,
+				F228F61B1B7747600026C450 /* PopoverViewController.m in Sources */,
 				F228F5B41B7741480026C450 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +422,7 @@
 				F228F5D31B7741480026C450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F228F5D41B7741480026C450 /* Build configuration list for PBXNativeTarget "SplitViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				F228F5D61B7741480026C450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
