@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.applyGradient()
+        self.view.applyDiagonalGradient()
     }
 
     override func didReceiveMemoryWarning() {
