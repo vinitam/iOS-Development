@@ -55,6 +55,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [self.splitViewController showDetailViewController:self.detailViewController sender:self];
     [self.detailViewController updateLabelWithTitle:self.breakfastItems[indexPath.row]];
 }
 
