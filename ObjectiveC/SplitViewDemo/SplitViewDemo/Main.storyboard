@@ -27,6 +27,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="sQX-7p-jib"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="zlv-3g-pba">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="tableRefreshed:" destination="bBy-H1-fz4" eventType="valueChanged" id="k2K-b9-Tz7"/>
+                        </connections>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1d-C1-Hda" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

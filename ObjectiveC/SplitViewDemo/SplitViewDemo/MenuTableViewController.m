@@ -59,6 +59,15 @@
     [self.detailViewController updateLabelWithTitle:self.breakfastItems[indexPath.row]];
 }
 
+- (IBAction)tableRefreshed:(id)sender {
+    [self.refreshControl beginRefreshing];
+    [self performSelector:@selector(stopRefresh) withObject:self afterDelay:2];
+}
 
+-(void)stopRefresh
+{
+    [self.refreshControl endRefreshing];
+
+}
 
 @end
