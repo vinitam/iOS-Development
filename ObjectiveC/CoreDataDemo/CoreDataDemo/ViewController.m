@@ -37,7 +37,10 @@
 {
     [DataManager fetchDataForMatchesWithSuccess:^(id response) {
         self.tableData = [self fetchSeasonData];
-        [self.tableView reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+
+        });
     } failure:^(NSError *error) {
         
     }];
