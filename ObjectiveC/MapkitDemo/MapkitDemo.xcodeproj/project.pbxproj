@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2CDE6C41B89DFD900E96C16 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CDE6C31B89DFD900E96C16 /* Annotation.m */; };
+		F2CDE6C61B89E1AC00E96C16 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CDE6C51B89E1AC00E96C16 /* pin.png */; };
+		F2CDE6C81B89E52200E96C16 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CDE6C71B89E52200E96C16 /* home.png */; };
 		F2D4B3501A9B616900B6FE15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4B34F1A9B616900B6FE15 /* main.m */; };
 		F2D4B3531A9B616900B6FE15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4B3521A9B616900B6FE15 /* AppDelegate.m */; };
 		F2D4B3561A9B616900B6FE15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D4B3551A9B616900B6FE15 /* ViewController.m */; };
@@ -28,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F2CDE6C21B89DFD900E96C16 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		F2CDE6C31B89DFD900E96C16 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		F2CDE6C51B89E1AC00E96C16 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		F2CDE6C71B89E52200E96C16 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		F2D4B34A1A9B616900B6FE15 /* MapkitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapkitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D4B34E1A9B616900B6FE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2D4B34F1A9B616900B6FE15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,8 +96,12 @@
 				F2D4B3521A9B616900B6FE15 /* AppDelegate.m */,
 				F2D4B3541A9B616900B6FE15 /* ViewController.h */,
 				F2D4B3551A9B616900B6FE15 /* ViewController.m */,
+				F2CDE6C21B89DFD900E96C16 /* Annotation.h */,
+				F2CDE6C31B89DFD900E96C16 /* Annotation.m */,
 				F2D4B3571A9B616900B6FE15 /* Main.storyboard */,
 				F2D4B35A1A9B616900B6FE15 /* Images.xcassets */,
+				F2CDE6C71B89E52200E96C16 /* home.png */,
+				F2CDE6C51B89E1AC00E96C16 /* pin.png */,
 				F2D4B35C1A9B616900B6FE15 /* LaunchScreen.xib */,
 				F2D4B34D1A9B616900B6FE15 /* Supporting Files */,
 			);
@@ -204,6 +215,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2D4B3591A9B616900B6FE15 /* Main.storyboard in Resources */,
+				F2CDE6C81B89E52200E96C16 /* home.png in Resources */,
+				F2CDE6C61B89E1AC00E96C16 /* pin.png in Resources */,
 				F2D4B35E1A9B616900B6FE15 /* LaunchScreen.xib in Resources */,
 				F2D4B35B1A9B616900B6FE15 /* Images.xcassets in Resources */,
 			);
@@ -225,6 +238,7 @@
 			files = (
 				F2D4B3561A9B616900B6FE15 /* ViewController.m in Sources */,
 				F2D4B3531A9B616900B6FE15 /* AppDelegate.m in Sources */,
+				F2CDE6C41B89DFD900E96C16 /* Annotation.m in Sources */,
 				F2D4B3501A9B616900B6FE15 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

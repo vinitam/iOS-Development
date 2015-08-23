@@ -14,11 +14,11 @@
 		<string>https://github.com/vinitam/iOS-Development.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SwitchTutorial/SwitchTutorial.xcodeproj</string>
+	<string>ObjectiveC/SwitchTutorial/SwitchTutorial.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/vinitam/iOS-Development.git</string>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</string>
 			<key>IDESourceControlWCCName</key>
-			<string>iOS-Development</string>
+			<string>Swift</string>
 		</dict>
 	</array>
 </dict>

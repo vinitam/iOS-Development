@@ -162,6 +162,7 @@
 		F2BA96FC1B341B2700FF9F3C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Vinita Miranda";
 				TargetAttributes = {
@@ -417,6 +418,7 @@
 				F2BA97251B341B2800FF9F3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2BA97261B341B2800FF9F3C /* Build configuration list for PBXNativeTarget "ActivityVCDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +427,7 @@
 				F2BA97281B341B2800FF9F3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

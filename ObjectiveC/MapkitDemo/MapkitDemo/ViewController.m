@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <CoreLocation/CoreLocation.h>
+#import "Annotation.h"
 #define IS_OS_8_OR_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 
 @interface ViewController ()
@@ -47,15 +48,53 @@
     self.locationManager.distanceFilter = kCLDistanceFilterNone;
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     [self.locationManager startUpdatingLocation];
-    
-    //User specified
-//    MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
-//    region.center.latitude = 40.712784;
-//    region.center.longitude = -74.005941;
-//    region.span.longitudeDelta = 0.005f;
-//    region.span.longitudeDelta = 0.005f;
-//    [self.mapView setRegion:region animated:YES];
-    
+
+    //default
+
+    MKPointAnnotation*    annotation = [[MKPointAnnotation alloc] init];
+    CLLocationCoordinate2D myCoordinate;
+    myCoordinate.latitude=12.974729;
+    myCoordinate.longitude=77.609375;
+    annotation.title = @"Home";
+    annotation.coordinate = myCoordinate;
+    [self.mapView addAnnotation:annotation];
+
+
+}
+
+-(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:    (id<MKAnnotation>)annotation
+{
+    // If it's the user location, just return nil.
+    if ([annotation isKindOfClass:[MKUserLocation class]])
+        return nil;
+
+    // Handle any custom annotations.
+    if ([annotation isKindOfClass:[MKPointAnnotation class]])
+    {
+        // Try to dequeue an existing pin view first.
+        MKAnnotationView *pinView = (MKAnnotationView*)[mapView dequeueReusableAnnotationViewWithIdentifier:@"CustomPinAnnotationView"];
+        if (!pinView)
+        {
+            // If an existing pin view was not available, create one.
+            pinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPinAnnotationView"];
+            //pinView.animatesDrop = YES;
+            pinView.canShowCallout = YES;
+            pinView.image = [UIImage imageNamed:@"pin.png"];
+            pinView.calloutOffset = CGPointMake(0, 32);
+        } else {
+            pinView.annotation = annotation;
+        }
+
+        UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        pinView.rightCalloutAccessoryView = rightButton;
+
+        // Add an image to the left callout.
+        UIImageView *iconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"home.png"]];
+        pinView.leftCalloutAccessoryView = iconView;
+
+        return pinView;
+    }
+    return nil;
 }
 
 ////Current location

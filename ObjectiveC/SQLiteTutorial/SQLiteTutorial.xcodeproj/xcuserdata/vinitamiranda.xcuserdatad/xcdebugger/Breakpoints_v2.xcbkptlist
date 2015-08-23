@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SQLiteTutorial/DataHelper.m"
-            timestampString = "446140557.148529"
+            timestampString = "461959481.349098"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "-createIssueWithName:issueDescription:"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "-createDB"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SQLiteTutorial/RegisterViewController.m"
-            timestampString = "446141085.607998"
+            filePath = "SQLiteTutorial/DataHelper.m"
+            timestampString = "461959489.648184"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "-dismissKeyboard:"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "+sharedInstance"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
