@@ -105,6 +105,9 @@
     [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
 }
 
+-(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
 
+}
 
 @end
