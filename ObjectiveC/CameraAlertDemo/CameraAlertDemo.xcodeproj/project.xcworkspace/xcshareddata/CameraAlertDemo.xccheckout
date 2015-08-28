@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5728D8A8-9FFB-4679-B75C-DE0BD5C9D61A</string>
+	<string>748AC546-22CA-49DF-A2CA-35E4AB527665</string>
 	<key>IDESourceControlProjectName</key>
 	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,7 +14,7 @@
 		<string>https://github.com/vinitam/iOS-Development.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Swift/ProtocolSampleSwift/ProtocolSampleSwift.xcodeproj/project.xcworkspace</string>
+	<string>ObjectiveC/CameraAlertDemo/CameraAlertDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B4CA50F54C6D71CC4C0ED2F64CAC4AA55164C330</key>
